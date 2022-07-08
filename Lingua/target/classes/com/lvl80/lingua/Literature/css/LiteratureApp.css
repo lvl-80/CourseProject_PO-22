@@ -1,0 +1,16 @@
+.main{
+    -fx-background-color: #f5f5f5;
+}
+
+.main__block{
+    -fx-padding: 10px;
+    -fx-border-width: 10px;
+    -fx-border-color: #fed15a;
+    -fx-background-color: black;
+}
+
+.back_button{
+    -fx-background-color: black;
+    -fx-cursor: hand;
+    -fx-background-radius: 90;
+}

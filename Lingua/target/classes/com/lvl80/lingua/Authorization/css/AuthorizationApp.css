@@ -1,0 +1,29 @@
+.logo{
+    -fx-font-family: "Bison Bold";
+    -fx-text-fill: black;
+}
+
+.input_field{
+    -fx-background-color: #151515;
+    -fx-text-fill: white;
+    -fx-font-family: "Menlo";
+    -fx-font-size: 14;
+}
+
+.button_login{
+    /*-fx-background-color:  #1b1b1b;*/
+    -fx-background-color: #fed15a;
+    -fx-font-family: "Arial Black";
+    -fx-font-size: 13;
+    -fx-text-fill: black;
+    -fx-cursor: hand;
+}
+
+.button_reg{
+    /*-fx-background-color:  #1b1b1b;*/
+    -fx-background-color: white;
+    -fx-font-family: "Arial Black";
+    -fx-font-size: 13;
+    -fx-text-fill: black;
+    -fx-cursor: hand;
+}

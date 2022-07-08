@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="728.0" prefWidth="915.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lvl80.lingua.Level4.Level4AppController">
+   <children>
+      <VBox prefHeight="728.0" prefWidth="263.0" style="-fx-background-color: black;">
+         <padding>
+            <Insets left="25.0" top="135.0" />
+         </padding>
+         <children>
+            <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#showSubtheme1" prefHeight="24.0" prefWidth="265.0" styleClass="theme_button" stylesheets="@css/Level4App.css" text="ООП" textFill="WHITE" />
+            <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#showSubtheme2" prefHeight="24.0" prefWidth="265.0" styleClass="theme_button" stylesheets="@css/Level4App.css" text="Методы" textFill="WHITE" />
+            <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#showSubtheme3" prefHeight="56.0" prefWidth="238.0" styleClass="theme_button" stylesheets="@css/Level4App.css" text="Возвращаемый Тип Методов" textFill="WHITE" wrapText="true" />
+            <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#showSubtheme4" prefHeight="55.0" prefWidth="238.0" styleClass="theme_button" stylesheets="@css/Level4App.css" text="Создание Классов и Объектов" textFill="WHITE" wrapText="true" />
+            <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#showSubtheme5" prefHeight="21.0" prefWidth="263.0" styleClass="theme_button" stylesheets="@css/Level4App.css" text="Атрибут Класса" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+            <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#showSubtheme6" prefHeight="24.0" prefWidth="265.0" styleClass="theme_button" stylesheets="@css/Level4App.css" text="Модификаторы Доступа" textFill="WHITE" />
+            <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#showSubtheme7" prefHeight="24.0" prefWidth="265.0" styleClass="theme_button" stylesheets="@css/Level4App.css" text="Getter и Setter" textFill="WHITE" />
+            <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#showSubtheme8" prefHeight="24.0" prefWidth="265.0" styleClass="theme_button" stylesheets="@css/Level4App.css" text="Конструкторы" textFill="WHITE" />
+            <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#showSubtheme9" prefHeight="54.0" prefWidth="238.0" styleClass="theme_button" stylesheets="@css/Level4App.css" text="Числовые и Ссылочные типы" textFill="WHITE" wrapText="true" />
+            <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#showSubtheme10" prefHeight="24.0" prefWidth="265.0" styleClass="theme_button" stylesheets="@css/Level4App.css" text="Класс Math" textFill="WHITE" />
+            <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#showSubtheme11" prefHeight="24.0" prefWidth="265.0" styleClass="theme_button" stylesheets="@css/Level4App.css" text="Static" textFill="WHITE" />
+            <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#showSubtheme12" prefHeight="24.0" prefWidth="265.0" styleClass="theme_button" stylesheets="@css/Level4App.css" text="Final" textFill="WHITE" />
+            <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#showSubtheme13" prefHeight="24.0" prefWidth="265.0" styleClass="theme_button" stylesheets="@css/Level4App.css" text="Packages" textFill="WHITE" />
+            <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#showSubtheme14" prefHeight="24.0" prefWidth="265.0" style="-fx-background-color: #fed15a; -fx-text-fill: black;" styleClass="theme_button" stylesheets="@css/Level4App.css" text="Тест" textFill="WHITE" />
+         </children>
+      </VBox>
+      <AnchorPane layoutX="132.0" layoutY="12.0" prefHeight="22.0" prefWidth="0.0" style="-fx-background-color: white; -fx-background-radius: 30;">
+         <children>
+            <AnchorPane layoutX="-123.0" layoutY="-2.0" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: white; -fx-background-radius: 90;" styleClass="back_button" />
+            <Label layoutX="-108.0" prefHeight="32.0" prefWidth="16.0" text="&lt;" textFill="#000001">
+               <font>
+                  <Font name="Bison Bold" size="28.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Button layoutX="-122.0" layoutY="-2.0" mnemonicParsing="false" onAction="#backToLobby" opacity="0.0" prefHeight="40.0" prefWidth="40.0" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+      <ScrollPane fx:id="sp1" layoutX="261.0" layoutY="-2.0" prefHeight="730.0" prefWidth="680.0" visible="true">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="832.0" prefWidth="662.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="36.0" layoutY="45.0" styleClass="h1_" stylesheets="@css/Level4App.css" text="Объектно-Ориентированное Программирование" />
+                  <AnchorPane layoutX="36.0" layoutY="122.0" prefHeight="346.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="320.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level4App.css" text="Java использует Объектно-Ориентированное Программирование (ООП), стиль программирования, который предназначен, чтобы сделать мышление о программировании ближе к мышлению о реальном мире. В ООП, каждый объект является независимой единицей с уникальным идентификатором, также, как и объекты в реальном мире.Объекты также имеют характеристики, которые используются для их описания.   Например, машина может быть красной или синей, кружка может быть полной или пустой, и так далее. Эти характеристики также называются атрибутами. Атрибут описывает текущее состояние объекта.  В реальном мире каждый объект ведет себя по-своему. Машина движется, телефон звонит и так далее. То же самое касается и объектов: поведение специфично объекту типу объекта." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="36.0" layoutY="503.0" prefHeight="30.0" prefWidth="292.0" styleClass="h1_" stylesheets="@css/Level4App.css" text="Классы" />
+                  <AnchorPane layoutX="36.0" layoutY="546.0" prefHeight="246.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="218.0" prefWidth="545.0" styleClass="h2_" stylesheets="@css/Level4App.css" text="Класс описывает каким будет объект, но отделен от самого объекта.  Другими словами, классы можно назвать проектами, описаниями, или определениями для объекта. Вы можете использовать один и тот же класс в качестве проекта для создания множества объектов. Первым шагом является определение класса, что затем становится проектом для создания объекта.  Каждый класс имеет имя, которое используется для определения атрибутов и поведения." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+               </children></AnchorPane>
+        </content>
+      </ScrollPane>
+      <ScrollPane fx:id="sp2" layoutX="261.0" layoutY="-1.0" prefHeight="738.0" prefWidth="680.0" visible="false">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1845.0" prefWidth="662.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="36.0" layoutY="45.0" prefHeight="30.0" prefWidth="348.0" styleClass="h1_" stylesheets="@css/Level4App.css" text="Методы" />
+                  <AnchorPane layoutX="36.0" layoutY="122.0" prefHeight="133.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="100.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level4App.css" text="Методы определяют поведение. Метод является коллекцией выражений, сгруппированных вместе для выполнения действия. System.out.println() является примером метода.   Вы можете определить свои собственные методы для выполнения желаемых действий." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="37.0" layoutY="269.0" prefHeight="237.0" prefWidth="487.0" styleClass="code" stylesheets="@css/Level4App.css" text="&#10;class MyClass {&#10;&#10;    static void sayHello() {&#10;        System.out.println(&quot;Hello World!&quot;);&#10;    }&#10;&#10;    public static void main(String[ ] args) {&#10;        sayHello();&#10;    }&#10;&#10;}" />
+                  <AnchorPane layoutX="36.0" layoutY="519.0" prefHeight="86.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="56.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level4App.css" text="В вышеуказанном коде объявлен метод &quot;sayHello&quot;, который печатает текст, и вызывается в main." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="36.0" layoutY="636.0" prefHeight="30.0" prefWidth="348.0" styleClass="h1_" stylesheets="@css/Level4App.css" text="Вызов Методов" />
+                  <AnchorPane layoutX="36.0" layoutY="698.0" prefHeight="133.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="100.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level4App.css" text="Вы можете вызвать метод любое количество раз. При запуске метода код перескакивает в место, где метод был определен, выполняет код внутри него, а затем возвращается обратно и выполняет последующие строки." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="847.0" prefHeight="281.0" prefWidth="487.0" styleClass="code" stylesheets="@css/Level4App.css" text="&#10;class MyClass {&#10;&#10;    static void sayHello() {&#10;        System.out.println(&quot;Hello World!&quot;);&#10;    }&#10;&#10;    public static void main(String[ ] args) {&#10;        sayHello();&#10;        sayHello();&#10;        sayHello();&#10;    }&#10;&#10;}" />
+                  <Label layoutX="36.0" layoutY="1159.0" prefHeight="30.0" prefWidth="348.0" styleClass="h1_" stylesheets="@css/Level4App.css" text="Параметры Методов" />
+                  <AnchorPane layoutX="36.0" layoutY="1220.0" prefHeight="148.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="116.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level4App.css" text="Вы также можете создать метод, который принимает некоторую информацию, называемую параметрами, при его вызове. Параметры методов необходимо указывать внутри круглых скобок.  Например, мы можем модифицировать наш метод sayHello(), чтобы он принимал параметр String." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="1381.0" prefHeight="262.0" prefWidth="487.0" styleClass="code" stylesheets="@css/Level4App.css" text="&#10;class MyClass {&#10;  &#10;    static void sayHello(String name) {&#10;        System.out.println(&quot;Hello &quot; + name);&#10;    }&#10;&#10;    public static void main(String[ ] args) {&#10;        sayHello(&quot;David&quot;);&#10;        sayHello(&quot;Amy&quot;);&#10;    }&#10;&#10;}" />
+                  <AnchorPane layoutX="36.0" layoutY="1659.0" prefHeight="148.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="116.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level4App.css" text="Вышеуказанный метод принимает строку с именем name в качестве параметра, который используется в теле метода. Затем, при вызове метода, мы передаем значение параметра в скобки.  Метод может иметь множество параметров, разделенных запятыми." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <ScrollPane fx:id="sp3" layoutX="261.0" layoutY="-1.0" prefHeight="760.0" prefWidth="680.0" visible="false">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1454.0" prefWidth="662.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="36.0" layoutY="45.0" prefHeight="30.0" prefWidth="348.0" styleClass="h1_" stylesheets="@css/Level4App.css" text="Возвращаемый Тип Методов" />
+                  <AnchorPane layoutX="36.0" layoutY="122.0" prefHeight="135.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="101.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level4App.css" text="Ключевое слово return может быть использовано в методах для возвращения значения.  Например, мы можем определить метод sum, который возвращает сумму его двух параметров." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="272.0" prefHeight="98.0" prefWidth="573.0" styleClass="code" stylesheets="@css/Level4App.css" text="&#10;static int sum(int val1, int val2) { &#10;   return val1 + val2; &#10;}" />
+                  <AnchorPane layoutX="36.0" layoutY="384.0" prefHeight="162.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="129.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level4App.css" text="Обратите внимание, что в описании метода мы указали возвращаемый тип до определения имени метода. Для нашего метода sum, типом является int, так как он принимает два параметра типа int и возвращает их сумму, которая также имеет тип int.Теперь, мы можем использовать метод в нашем main." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="560.0" prefHeight="238.0" prefWidth="573.0" styleClass="code" stylesheets="@css/Level4App.css" text="&#10;class MyClass {&#10;&#10;    static int sum(int val1, int val2) {&#10;        return val1 + val2;&#10;    }&#10;&#10;    public static void main(String[ ] args) {&#10;        int x = sum(2, 5);&#10;        System.out.println(x);&#10;    }&#10;}" />
+                  <AnchorPane layoutX="36.0" layoutY="809.0" prefHeight="124.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="101.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level4App.css" text="Т.к. метод возвращает значение, мы можем присвоить его переменной.Взгляните на тот же самый код из предыдущего урока с комментариями, чтобы лучше понять, как он работает:" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="944.0" prefHeight="296.0" prefWidth="573.0" styleClass="code" stylesheets="@css/Level4App.css" text="&#10;// returns an int value 5 &#10;static int returnFive() { &#10;  return 5; &#10;} &#10; &#10;// has a parameter &#10;static void sayHelloTo(String name) { &#10;  System.out.println(&quot;Hello &quot; + name); &#10;} &#10; &#10;// simply prints&quot;Hello World!&quot; &#10;static void sayHello() { &#10;  System.out.println(&quot;Hello World!&quot;); &#10;}" />
+                  <AnchorPane layoutX="36.0" layoutY="1250.0" prefHeight="96.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="67.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level4App.css" text="Получив знания о возвращаемых типах и параметрах методов, давайте взглянем на определение метода main." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="1358.0" prefHeight="61.0" prefWidth="573.0" styleClass="code" stylesheets="@css/Level4App.css" text="&#10;public static void main(String[ ] args)" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <ScrollPane fx:id="sp4" layoutX="263.0" layoutY="-2.0" prefHeight="728.0" prefWidth="680.0" visible="false">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1107.0" prefWidth="662.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="36.0" layoutY="45.0" prefHeight="30.0" prefWidth="348.0" styleClass="h1_" stylesheets="@css/Level4App.css" text="Создание Классов" />
+                  <TextArea editable="false" layoutX="36.0" layoutY="289.0" prefHeight="131.0" prefWidth="522.0" styleClass="code" stylesheets="@css/Level4App.css" text="&#10;public class Animal { &#10;  void bark() { &#10;    System.out.println(&quot;Woof-Woof&quot;); &#10;  } &#10;}" />
+                  <AnchorPane layoutX="36.0" layoutY="103.0" prefHeight="170.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="137.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level4App.css" text="Чтобы создать свои собственные объекты, вам необходимо сперва создать соответствующие классы. Это выполняется с помощью нажатия правой кнопкой мыши на папке src в Eclipse и выбора Create-&gt;New-&gt;Class. Назовите ваш класс и нажмите Finish чтобы добавить новый класс в ваш проект:" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="36.0" layoutY="434.0" prefHeight="67.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="43.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level4App.css" text="Мы объявили метод bark() в нашем классе Animal." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="672.0" prefHeight="263.0" prefWidth="473.0" styleClass="code" stylesheets="@css/Level4App.css" text="&#10;public class Animal {&#10;    void bark() {&#10;        System.out.println(&quot;Woof-Woof&quot;);&#10;    }&#10;}&#10;&#10;class MyClass {&#10;    public static void main(String[ ] args) {&#10;        Animal dog = new Animal();&#10;        dog.bark();&#10;    }&#10;}" />
+                  <AnchorPane layoutX="36.0" layoutY="950.0" prefHeight="131.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="105.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level4App.css" text="Теперь, dog является объектом типа Animal. Следовательно, мы можем вызвать его метод bark(), используя имя объекта и точку.  Точка используется для получения доступа к атрибутам и методам объекта." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="36.0" layoutY="528.0" prefHeight="30.0" prefWidth="348.0" styleClass="h1_" stylesheets="@css/Level4App.css" text="Создание Объектов" />
+                  <AnchorPane layoutX="36.0" layoutY="582.0" prefHeight="75.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="43.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level4App.css" text="Давайте перейдем к нашему main и создадим новый объект нашего класса. MyClass.java" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <ScrollPane fx:id="sp5" layoutX="263.0" prefHeight="739.0" prefWidth="680.0" visible="false">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1255.0" prefWidth="662.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="36.0" layoutY="45.0" prefHeight="30.0" prefWidth="510.0" styleClass="h1_" stylesheets="@css/Level4App.css" text="Определение Атрибутов" />
+                  <TextArea editable="false" layoutX="36.0" layoutY="231.0" prefHeight="231.0" prefWidth="442.0" styleClass="code" stylesheets="@css/Level4App.css" text="&#10;public class Vehicle { &#10;  int maxSpeed; &#10;  int wheels; &#10;  String color; &#10;  double fuelCapacity;   &#10; &#10;  void horn() { &#10;    System.out.println(&quot;Beep!&quot;); &#10;  }   &#10;}" />
+                  <AnchorPane layoutX="36.0" layoutY="103.0" prefHeight="118.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="86.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level4App.css" text="Класс имеет атрибуты и методы. Атрибуты являются переменными внутри класса.  Давайте создадим класс Vehicle с соответствующими атрибутами и методами." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="36.0" layoutY="481.0" prefHeight="110.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="85.0" prefWidth="537.0" styleClass="h2_" stylesheets="@css/Level4App.css" text="maxSpeed, wheels, color, и fuelCapacity являются атрибутами нашего класса Vehicle, а horn() является единственным методом." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="810.0" prefHeight="385.0" prefWidth="465.0" styleClass="code" stylesheets="@css/Level4App.css" text="&#10;public class Vehicle {&#10;    int maxSpeed;&#10;    int wheels;&#10;    String color;&#10;    double fuelCapacity;  &#10;    &#10;    void horn() {&#10;        System.out.println(&quot;Beep!&quot;);&#10;    }&#10;}&#10;&#10;class MyClass {&#10;    public static void main(String[ ] args) {&#10;        Vehicle v1 = new Vehicle();&#10;        Vehicle v2 = new Vehicle();&#10;        v1.color = &quot;red&quot;;&#10;        v2.horn();&#10;    }&#10;}" />
+                  <AnchorPane layoutX="36.0" layoutY="2263.0" prefHeight="118.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="91.0" prefWidth="537.0" styleClass="h2_" stylesheets="@css/Level4App.css" text="switch-выражение делает блок switch-case намного короче и не использует оператор break." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="36.0" layoutY="625.0" prefHeight="30.0" prefWidth="510.0" styleClass="h1_" stylesheets="@css/Level4App.css" text="Создание Объектов" />
+                  <AnchorPane layoutX="36.0" layoutY="687.0" prefHeight="110.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="85.0" prefWidth="537.0" styleClass="h2_" stylesheets="@css/Level4App.css" text="Теперь, мы можем создать множество объектов нашего класса Vehicle, и использовать синтаксис с точкой, чтобы получить доступ к его атрибутам и методам." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <ScrollPane fx:id="sp6" layoutX="263.0" prefHeight="728.0" prefWidth="680.0" visible="false">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="993.0" prefWidth="662.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="36.0" layoutY="45.0" prefHeight="30.0" prefWidth="510.0" styleClass="h1_" stylesheets="@css/Level4App.css" text="Модификаторы Доступа" />
+                  <TextArea editable="false" layoutX="36.0" layoutY="222.0" prefHeight="66.0" prefWidth="417.0" styleClass="code" stylesheets="@css/Level4App.css" text="&#10;public static void main(String[ ] args)" />
+                  <AnchorPane layoutX="36.0" layoutY="103.0" prefHeight="103.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="71.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level4App.css" text="Теперь давайте обсудим ключевое слово public перед методом main." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="36.0" layoutY="302.0" prefHeight="427.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="7.0" prefHeight="399.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level4App.css" text="public является модификатором доступа, что означает, что он используется для установки уровня доступа. Вы можете использовать модификаторы доступа для классов, атрибутов и методов.  В случае с классами, доступными модификаторами являются public или default, как описано ниже: public: к классу может быть получен доступ любым другим классом. default: к классу может быть получен доступ только классами из одного пакета (package).  Следующие варианты доступны для атрибутов и методов: default: атрибут или метод, объявленный без модификатора ограничения доступа, доступен для любого другого класса в том же пакете (package). public: доступ может быть получен из любого класса. protected: обеспечивает такой же доступ, как и модификатор default, с добавлением, что подкласс может получить доступ к protected методам и переменным суперкласса (О подклассах и суперклассах будет рассказано в последующих уроках). private: доступ может быть получен только изнутри этого объявленного класса." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="740.0" prefHeight="221.0" prefWidth="424.0" styleClass="code" stylesheets="@css/Level4App.css" text="&#10;public class Vehicle { &#10;  private int maxSpeed; &#10;  private int wheels; &#10;  private String color; &#10;  private double fuelCapacity; &#10; &#10;  public void horn() { &#10;    System.out.println(&quot;Beep!&quot;); &#10;  } &#10;}" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <ScrollPane fx:id="sp7" layoutX="263.0" prefHeight="739.0" prefWidth="680.0" visible="false">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1325.0" prefWidth="662.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="36.0" layoutY="45.0" prefHeight="30.0" prefWidth="510.0" styleClass="h1_" stylesheets="@css/Level4App.css" text="Getter и Setter" />
+                  <AnchorPane layoutX="36.0" layoutY="103.0" prefHeight="198.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="174.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level4App.css" text="Методы Getter и Setter используются для эффективной защиты информации, в части касающейся создания классов. Для каждой переменной метод get возвращает ее значение, а метод set устанавливает значение.  Getter начинается с get, за ним следует имя переменной, с первой буквой в верхнем регистре.  Setter начинается с set, за ним следует имя переменной, с первой буквой в верхнем регистре." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="311.0" prefHeight="268.0" prefWidth="430.0" styleClass="code" stylesheets="@css/Level4App.css" text="&#10;public class Vehicle { &#10;  private String color; &#10; &#10;  // Getter &#10;  public String getColor() { &#10;    return color; &#10;  } &#10; &#10; // Setter &#10;  public void setColor(String c) { &#10;    this.color = c; &#10;  } &#10;}" />
+                  <AnchorPane layoutX="36.0" layoutY="591.0" prefHeight="152.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="126.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level4App.css" text="Метод getter возвращает значение атрибута.  Метод setter принимает параметр и присваивает его к атрибуту.Теперь, когда наши методы getter и setter были определены, мы можем использовать их в нашем main:" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="754.0" prefHeight="420.0" prefWidth="430.0" styleClass="code" stylesheets="@css/Level4App.css" text="&#10;public class Vehicle {&#10;    private String color;&#10;    &#10;    // Getter&#10;    public String getColor() {&#10;        return color;&#10;    }&#10;    &#10;    // Setter&#10;    public void setColor(String c) {&#10;        this.color = c;&#10;    }&#10;}&#10;&#10;class Program {&#10;    public static void main(String[ ] args) {&#10;        Vehicle v1 = new Vehicle();&#10;        v1.setColor(&quot;Red&quot;);&#10;        System.out.println(v1.getColor());&#10;    }&#10;}" />
+                  <AnchorPane layoutX="36.0" layoutY="1184.0" prefHeight="116.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="85.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level4App.css" text="Методы getter и setter позволяют нам управлять значениями. Вы можете, например, утверждать заданные значения в методе setter до самой установки значения." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <ScrollPane fx:id="sp8" layoutX="263.0" prefHeight="767.0" prefWidth="680.0" visible="false">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="2575.0" prefWidth="662.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="36.0" layoutY="45.0" prefHeight="30.0" prefWidth="510.0" styleClass="h1_" stylesheets="@css/Level4App.css" text="Конструкторы" />
+                  <AnchorPane layoutX="36.0" layoutY="103.0" prefHeight="195.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="160.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level4App.css" text="Конструкторы являются специальными методами, которые вызываются при создании объекта и используются для их инициализации.   Конструктор может быть использован для задания начального значения для атрибутов объекта.  - Имя конструктора должно быть таким же, как и имя класса. - Конструктор не должен иметь явный возвращаемый тип." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="309.0" prefHeight="157.0" prefWidth="414.0" styleClass="code" stylesheets="@css/Level4App.css" text="&#10;public class Vehicle { &#10;  private String color; &#10;  Vehicle() { &#10;     color = &quot;Red&quot;; &#10;  } &#10;}" />
+                  <AnchorPane layoutX="36.0" layoutY="481.0" prefHeight="195.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="160.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level4App.css" text="Метод Vehicle() является конструктором нашего класса, так что при создании объекта этого класса атрибут color будет установлен на &quot;Red&quot;.  Конструктор может также принимать параметры для инициализации атрибутов.Метод Vehicle() является конструктором нашего класса, так что при создании объекта этого класса атрибут color будет установлен на &quot;Red&quot;.  Конструктор может также принимать параметры для инициализации атрибутов." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="693.0" prefHeight="157.0" prefWidth="414.0" styleClass="code" stylesheets="@css/Level4App.css" text="&#10;public class Vehicle { &#10;  private String color; &#10;  Vehicle(String c) { &#10;    color = c; &#10;  } &#10;}" />
+                  <Label layoutX="36.0" layoutY="889.0" prefHeight="30.0" prefWidth="510.0" styleClass="h1_" stylesheets="@css/Level4App.css" text="Использование Конструкторов" />
+                  <AnchorPane layoutX="36.0" layoutY="958.0" prefHeight="98.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="68.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level4App.css" text="Конструктор вызывается, когда вы создаете объект, используя ключевое слово new." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="1071.0" prefHeight="135.0" prefWidth="414.0" styleClass="code" stylesheets="@css/Level4App.css" text="&#10;public class MyClass { &#10;  public static void main(String[ ] args) { &#10;    Vehicle v = new Vehicle(&quot;Blue&quot;); &#10;  } &#10;}" />
+                  <AnchorPane layoutX="36.0" layoutY="1218.0" prefHeight="130.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="99.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level4App.css" text="Один класс может иметь множество конструкторов с различным количеством параметров.  Методы setter внутри конструкторов могут быть использованы для установки значений атрибутов." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="1359.0" prefHeight="313.0" prefWidth="414.0" styleClass="code" stylesheets="@css/Level4App.css" text="&#10;public class Vehicle { &#10;  private String color; &#10; &#10;  Vehicle() { &#10;    this.setColor(&quot;Red&quot;); &#10;  } &#10;  Vehicle(String c) { &#10;    this.setColor(c); &#10;  } &#10; &#10;  // Setter &#10;  public void setColor(String c) { &#10;    this.color = c; &#10;  } &#10;}" />
+                  <AnchorPane layoutX="36.0" layoutY="1686.0" prefHeight="178.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="147.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level4App.css" text="Вышеуказанный класс имеет два конструктора, первый, без параметров, устанавливает значение по умолчанию атрибута color на &quot;Red&quot;, и второй конструктор, который принимает параметры и присваивает их к атрибутам.  Теперь, мы можем использовать конструкторы для создания объектов нашего класса." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="1879.0" prefHeight="632.0" prefWidth="500.0" styleClass="code" stylesheets="@css/Level4App.css" text="&#10;public class Vehicle {&#10;    private String color;&#10;    &#10;    Vehicle() {&#10;        this.setColor(&quot;Red&quot;);&#10;    }&#10;    Vehicle(String c) {&#10;        this.setColor(c);&#10;    }&#10;    &#10;    // Setter&#10;    public void setColor(String c) {&#10;        this.color = c;&#10;    }&#10;    &#10;    // Getter&#10;    public String getColor() {&#10;        return color;&#10;    }&#10;}&#10;&#10;public class Program {&#10;    public static void main(String[] args) {        &#10;        //color will be &quot;Red&quot;&#10;        Vehicle v1 = new Vehicle();&#10;        &#10;        //color will be &quot;Green&quot;&#10;        Vehicle v2 = new Vehicle(&quot;Green&quot;); &#10;        &#10;        System.out.println(v2.getColor());&#10;    }&#10;}" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <ScrollPane fx:id="sp9" layoutX="263.0" layoutY="-2.0" prefHeight="736.0" prefWidth="680.0" visible="false">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1604.0" prefWidth="662.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="36.0" layoutY="45.0" prefHeight="30.0" prefWidth="348.0" styleClass="h1_" stylesheets="@css/Level4App.css" text="Числовые Типы" />
+                  <TextArea editable="false" layoutX="36.0" layoutY="289.0" prefHeight="238.0" prefWidth="522.0" styleClass="code" stylesheets="@css/Level4App.css" text="&#10;public class MyClass {&#10;    public static void main(String[ ] args) {&#10;        int x = 5;&#10;        addOneTo(x);&#10;        System.out.println(x);       &#10;    }&#10;&#10;    static void addOneTo(int num) {&#10;        num = num + 1;&#10;    }&#10;}" />
+                  <AnchorPane layoutX="36.0" layoutY="103.0" prefHeight="170.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="137.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level4App.css" text="Числовой тип является базовым типом и включает в себя типы byte, short, int, long, float, double, boolean, и char. Эти типы данных хранят в себе значения, присвоенные им в соответствующих участках памяти.  Следовательно, при передаче их в метод, вы оперируете над значениями переменных, а не над самими переменными." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="36.0" layoutY="554.0" prefHeight="30.0" prefWidth="348.0" styleClass="h1_" stylesheets="@css/Level4App.css" text="Ссылочный Тип" />
+                  <AnchorPane layoutX="36.0" layoutY="607.0" prefHeight="170.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="137.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level4App.css" text="Ссылочный тип хранит ссылку (или адрес) на участок памяти, в котором хранится соответствующая информация.  При создании объекта с помощью конструктора вы создаете переменную ссылочного типа.  Для примера рассмотрим определенный класс Person:" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="792.0" prefHeight="587.0" prefWidth="522.0" styleClass="code" stylesheets="@css/Level4App.css" text="&#10;public class MyClass {&#10;    public static void main(String[ ] args) {&#10;        Person j;&#10;        j = new Person(&quot;John&quot;);&#10;        j.setAge(20);&#10;        celebrateBirthday(j);&#10;        System.out.println(j.getAge());&#10;  }&#10;    &#10;    static void celebrateBirthday(Person p) {&#10;        p.setAge(p.getAge() + 1);&#10;    }&#10;}&#10;&#10;public class Person {&#10;    private String name;&#10;    private int age;&#10;    &#10;    Person (String n) {&#10;        this.name = n;&#10;    }&#10;    &#10;    public int getAge() {&#10;        return age;&#10;    }&#10;    &#10;    public void setAge(int a) {&#10;        this.age = a;&#10;    }&#10;}" />
+                  <AnchorPane layoutX="36.0" layoutY="1396.0" prefHeight="170.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="137.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level4App.css" text="Метод celebrateBirthday принимает объект Person в качестве его параметра, и инкрементирует его атрибут.   Из-за того, что переменная j имеет ссылочный тип, метод действует на сам объект, и способен изменить действительное значение его атрибута." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <ScrollPane fx:id="sp10" layoutX="261.0" prefHeight="739.0" prefWidth="680.0" visible="false">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1844.0" prefWidth="662.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="36.0" layoutY="45.0" prefHeight="30.0" prefWidth="348.0" styleClass="h1_" stylesheets="@css/Level4App.css" text="Класс Math" />
+                  <AnchorPane layoutX="36.0" layoutY="122.0" prefHeight="185.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="157.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level4App.css" text="JDK определяет множество полезных классов, одним из них является класс Math, который предоставляет предопределенные методы для математических операций.  Вам не нужно создавать объект класса Math для его использования. Чтобы получить к нему доступ, введите Math. и соответствующий метод.  Math.abs() возвращает абсолютное значение его параметра." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="35.0" layoutY="321.0" prefHeight="202.0" prefWidth="573.0" styleClass="code" stylesheets="@css/Level4App.css" text="&#10;public class Program {&#10;    public static void main(String[] args) {&#10;        int a = Math.abs(10); &#10;        System.out.println(a);&#10;        &#10;        int b = Math.abs(-20);&#10;        System.out.println(b);&#10;    }&#10;}" />
+                  <AnchorPane layoutX="36.0" layoutY="535.0" prefHeight="117.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="81.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level4App.css" text="Math.ceil() округляет значение с плавающей точкой к ближайшему наибольшему целому значению. Округленное значение возвращается с типом double." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="667.0" prefHeight="145.0" prefWidth="573.0" styleClass="code" stylesheets="@css/Level4App.css" text="&#10;public class Program {&#10;    public static void main(String[] args) {&#10;        double c = Math.ceil(7.342);&#10;        System.out.println(c);&#10;    }&#10;}" />
+                  <AnchorPane layoutX="36.0" layoutY="824.0" prefHeight="100.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="9.0" prefHeight="81.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level4App.css" text="Подобным образом, Math.floor() округляет значение с плавающей точкой к ближайшему наименьшему целому числу." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="935.0" prefHeight="143.0" prefWidth="573.0" styleClass="code" stylesheets="@css/Level4App.css" text="&#10;public class Program {&#10;    public static void main(String[] args) {&#10;        double f = Math.floor(7.343);&#10;        System.out.println(f);&#10;    }&#10;}" />
+                  <AnchorPane layoutX="36.0" layoutY="1092.0" prefHeight="68.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="42.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level4App.css" text="Math.max() возвращает наибольший из его параметров." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="1175.0" prefHeight="143.0" prefWidth="573.0" styleClass="code" stylesheets="@css/Level4App.css" text="&#10;public class Program {&#10;    public static void main(String[] args) {&#10;        int m = Math.max(10, 20);&#10;        System.out.println(m);&#10;    }&#10;}" />
+                  <AnchorPane layoutX="36.0" layoutY="1330.0" prefHeight="71.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="40.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level4App.css" text="И наоборот, Math.min() возвращает наименьший параметр." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="1415.0" prefHeight="143.0" prefWidth="573.0" styleClass="code" stylesheets="@css/Level4App.css" text="&#10;public class Program {&#10;    public static void main(String[] args) {&#10;        int m = Math.min(10, 20);&#10;        System.out.println(m);&#10;    }&#10;}" />
+                  <AnchorPane layoutX="36.0" layoutY="1576.0" prefHeight="71.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="40.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level4App.css" text="Math.pow() принимает два параметра и возвращает первый параметр, возведенный в степень вторым параметром." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="1663.0" prefHeight="143.0" prefWidth="573.0" styleClass="code" stylesheets="@css/Level4App.css" text="&#10;public class Program {&#10;    public static void main(String[] args) {&#10;        double p = Math.pow(2, 3);&#10;        System.out.println(p);&#10;    }&#10;}" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <ScrollPane fx:id="sp11" layoutX="262.0" prefHeight="735.0" prefWidth="680.0" visible="false">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1723.0" prefWidth="662.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="36.0" layoutY="45.0" prefHeight="30.0" prefWidth="348.0" styleClass="h1_" stylesheets="@css/Level4App.css" text="Static" />
+                  <AnchorPane layoutX="36.0" layoutY="122.0" prefHeight="160.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="133.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level4App.css" text="Если вы объявляете переменную или метод с ключевым словом static, то они будут принадлежать классу, а не какому-либо экземпляру. Это значит, что существует только один экземпляр static, даже если вы создадите множество объектов класса, или не создадите ни одного. Он будет разделен всеми объектами." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="297.0" prefHeight="143.0" prefWidth="573.0" styleClass="code" stylesheets="@css/Level4App.css" text="&#10;public class Counter { &#10;  public static int COUNT=0; &#10;  Counter() { &#10;    COUNT++; &#10;  } &#10;}" />
+                  <AnchorPane layoutX="36.0" layoutY="454.0" prefHeight="127.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="100.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level4App.css" text="Переменная COUNT будет разделена всеми объектами этого класса.  Теперь, мы можем создать объекты нашего класса Counter в main, и получить доступ к статической переменной." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="595.0" prefHeight="291.0" prefWidth="573.0" styleClass="code" stylesheets="@css/Level4App.css" text="&#10;public class Counter {&#10;    public static int COUNT=0;&#10;    Counter() {&#10;        COUNT++;&#10;    }&#10;}&#10;&#10;public class MyClass {&#10;    public static void main(String[ ] args) {&#10;        Counter c1 = new Counter();&#10;        Counter c2 = new Counter();&#10;        System.out.println(Counter.COUNT);&#10;    }&#10;}" />
+                  <AnchorPane layoutX="36.0" layoutY="896.0" prefHeight="183.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="160.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level4App.css" text="В выводе будет 2, потому что переменная COUNT является статической и инкрементируется на единицу при каждом создании объекта класса Counter. В вышеуказанном коде мы создали 2 объекта.  Вы можете получить доступ к статической переменной с помощью любого объекта этого класса, например c1.COUNT.Такой же принцип применяется к статическим методам." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="1092.0" prefHeight="131.0" prefWidth="573.0" styleClass="code" stylesheets="@css/Level4App.css" text="&#10;public class Vehicle { &#10;  public static void horn() { &#10;    System.out.println(&quot;Beep&quot;); &#10;  } &#10;}" />
+                  <AnchorPane layoutX="36.0" layoutY="1236.0" prefHeight="92.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="68.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level4App.css" text="Теперъ можно вызвать метод horn, не создавая объекты класса Vehicle:" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="1341.0" prefHeight="239.0" prefWidth="573.0" styleClass="code" stylesheets="@css/Level4App.css" text="&#10;public class Vehicle {&#10;    public static void horn() {&#10;        System.out.println(&quot;Beep&quot;);&#10;    }&#10;}&#10;&#10;public class MyClass {&#10;    public static void main(String[ ] args) {&#10;        Vehicle.horn();&#10;    }&#10;}" />
+                  <AnchorPane layoutX="36.0" layoutY="1593.0" prefHeight="109.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="71.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level4App.css" text="Другим примером статических методов являются методы класса Math, что объясняет, почему вы можете вызвать их, не создавая объекты класса Math." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <ScrollPane fx:id="sp12" layoutX="263.0" prefHeight="736.0" prefWidth="680.0" visible="false">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="734.0" prefWidth="662.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="36.0" layoutY="45.0" prefHeight="30.0" prefWidth="510.0" styleClass="h1_" stylesheets="@css/Level4App.css" text="final" />
+                  <TextArea editable="false" layoutX="36.0" layoutY="231.0" prefHeight="140.0" prefWidth="442.0" styleClass="code" stylesheets="@css/Level4App.css" text="&#10;class MyClass {&#10;    public static final double PI = 3.14; &#10;    public static void main(String[ ] args) {&#10;        System.out.println(PI);&#10;    }&#10;}" />
+                  <AnchorPane layoutX="36.0" layoutY="103.0" prefHeight="118.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="86.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level4App.css" text="Используйте ключевое слово final чтобы обозначить константную переменную, которая может быть присвоена только один раз." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="36.0" layoutY="383.0" prefHeight="98.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="77.0" prefWidth="537.0" styleClass="h2_" stylesheets="@css/Level4App.css" text="PI теперь является константой. Любая попытка присвоить ей значение вызовет ошибку." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="803.0" prefHeight="323.0" prefWidth="465.0" styleClass="code" stylesheets="@css/Level4App.css" text="&#10;public class Program {&#10;    public static void main(String[] args) {&#10;        int day = 3;&#10;        switch(day) {&#10;            case 1:&#10;                System.out.println(&quot;Monday&quot;);&#10;                break;&#10;            case 2:&#10;                System.out.println(&quot;Tuesday&quot;);&#10;                break;&#10;            case 3:&#10;                System.out.println(&quot;Wednesday&quot;);&#10;                break;&#10;        }&#10;    }&#10;}" />
+                  <Label layoutX="36.0" layoutY="1164.0" prefHeight="30.0" prefWidth="510.0" styleClass="h1_" stylesheets="@css/Level4App.css" text="Оператор default" />
+                  <AnchorPane layoutX="36.0" layoutY="1227.0" prefHeight="135.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="105.0" prefWidth="537.0" styleClass="h2_" stylesheets="@css/Level4App.css" text="Выражение switch может иметь опциональный оператор default.  Оператор default может использоваться для выполнения задания, когда нет соответствий ни с одним из условий" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="1380.0" prefHeight="323.0" prefWidth="465.0" styleClass="code" stylesheets="@css/Level4App.css" text="&#10;public class Program {&#10;    public static void main(String[] args) {&#10;        int day = 3;&#10;&#10;        switch(day) {&#10;            case 6:&#10;                System.out.println(&quot;Saturday&quot;);&#10;                break;&#10;            case 7:&#10;                System.out.println(&quot;Sunday&quot;);&#10;                break;&#10;            default:&#10;                System.out.println(&quot;Weekday&quot;);&#10;        }&#10;    }&#10;}" />
+                  <Label layoutX="36.0" layoutY="1737.0" prefHeight="30.0" prefWidth="510.0" styleClass="h1_" stylesheets="@css/Level4App.css" text="Switch-выражение" />
+                  <AnchorPane layoutX="36.0" layoutY="1802.0" prefHeight="135.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="105.0" prefWidth="537.0" styleClass="h2_" stylesheets="@css/Level4App.css" text="Switch-выражение допускает несколько значений, разделенных запятыми, для каждого случая и возвращает значение для всего блока switch-case." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="1953.0" prefHeight="292.0" prefWidth="465.0" styleClass="code" stylesheets="@css/Level4App.css" text="&#10;public class Program&#10;{&#10;    public static void main(String[] args) {&#10;&#10;        int day = 2;&#10;        String dayType  = switch(day) {&#10;            case 1, 2, 3, 4, 5 -&gt; &quot;Working day&quot;;&#10;            case 6, 7 -&gt; &quot;Weekend&quot;;&#10;            default -&gt; &quot;Invalid day&quot;;&#10;            };&#10;        System.out.println(dayType);&#10;    }&#10;}" />
+                  <AnchorPane layoutX="36.0" layoutY="2263.0" prefHeight="118.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="91.0" prefWidth="537.0" styleClass="h2_" stylesheets="@css/Level4App.css" text="switch-выражение делает блок switch-case намного короче и не использует оператор break." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <ScrollPane fx:id="sp13" layoutX="263.0" prefHeight="739.0" prefWidth="680.0" visible="false">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1043.0" prefWidth="662.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="36.0" layoutY="45.0" prefHeight="30.0" prefWidth="510.0" styleClass="h1_" stylesheets="@css/Level4App.css" text="Пакеты" />
+                  <AnchorPane layoutX="36.0" layoutY="103.0" prefHeight="306.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="270.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level4App.css" text="Пакеты используются для избежания конфликта имен и для управления доступом к классам.  Пакет может быть определен в виде собранной группы классов похожего типа, вместе с под-пакетами.   Создать пакет в Java очень легко. Просто нажмите правой кнопкой мыши на вашей директории src и нажмите New-&gt;Package. Дайте вашему пакету имя и нажмите Finish.   Вы заметите, что появился новый пакет в директории проекта. Теперь вы можете перемещать классы в пакет и создавать там новые. Мы переместили наши классы Vehicle, Counter и Animal в пакет samples.Когда вы перемещаете/создаете класс в вашем пакете, следующий код появится вверху списка файлов." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="422.0" prefHeight="62.0" prefWidth="465.0" styleClass="code" stylesheets="@css/Level4App.css" text="&#10;package samples;" />
+                  <AnchorPane layoutX="36.0" layoutY="496.0" prefHeight="159.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="121.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level4App.css" text="Таким образом обозначается пакет, к которому принадлежит класс.  Теперь, нам необходимо импортировать классы, находящиеся в пакете в нашем main, чтобы их можно было использовать.  Следующий пример отображает, как использовать класс Vehicle пакета samples." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="665.0" prefHeight="189.0" prefWidth="465.0" styleClass="code" stylesheets="@css/Level4App.css" text="&#10;import samples.Vehicle; &#10; &#10;class MyClass { &#10;  public static void main(String[ ] args) { &#10;    Vehicle v1 = new Vehicle(); &#10;    v1.horn(); &#10;  } &#10;}" />
+                  <AnchorPane layoutX="36.0" layoutY="864.0" prefHeight="145.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="102.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level4App.css" text="Возникает два основных результата, когда класс размещается в пакете. Первый, имя пакета становится частью имени класса. Второй, имя пакета должно соответствовать структуре директории, где находится соответствующий файл класса." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <ScrollPane fx:id="sp14" layoutX="263.0" prefHeight="751.0" prefWidth="680.0" visible="false">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1654.0" prefWidth="662.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="36.0" layoutY="45.0" prefHeight="30.0" prefWidth="510.0" styleClass="h1_" stylesheets="@css/Level4App.css" text="Тест" />
+                  <AnchorPane layoutX="36.0" layoutY="103.0" prefHeight="142.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="121.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level4App.css" text="Для получения следующего уровня, необходимо пройти тест, состоящий из разных вопросов и способов ответа на них. " wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="36.0" layoutY="260.0" prefHeight="36.0" prefWidth="499.0" style="-fx-background-color: #fed15a;" styleClass="subblock" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="18.0" layoutY="5.0" prefHeight="40.0" prefWidth="463.0" styleClass="h3_" stylesheets="@css/Level4App.css" text="После прохождения этого теста вы получите 5й уровень" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="35.0" layoutY="320.0" prefHeight="129.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="61.0" prefWidth="551.0" styleClass="h2_" stylesheets="@css/Level4App.css" text="Заполните пустые места, чтобы определить метод, который не возвращает значение:" wrapText="true" />
+                        <Label layoutX="26.0" layoutY="90.0" styleClass="code_text" stylesheets="@css/Level4App.css" text="public" />
+                        <TextField fx:id="tf1" alignment="TOP_LEFT" layoutX="79.0" layoutY="85.0" prefHeight="28.0" prefWidth="56.0" promptText="____" styleClass="code_text" />
+                        <Label layoutX="134.0" layoutY="90.0" prefHeight="18.0" prefWidth="56.0" styleClass="code_text" stylesheets="@css/Level4App.css" text="calc()" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="36.0" layoutY="457.0" prefHeight="271.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="73.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level4App.css" text="Какой модификатор доступа ясно говорит, что к методу или переменной объекта может быть получен доступ с помощью кода, лежащего вне класса этого объекта?" wrapText="true" />
+                        <RadioButton fx:id="rb1" layoutX="36.0" layoutY="90.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="410.0" styleClass="code_text" text="default" wrapText="true" />
+                        <RadioButton fx:id="rb2" layoutX="36.0" layoutY="128.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="410.0" styleClass="code_text" text="public" wrapText="true" />
+                        <RadioButton fx:id="rb3" layoutX="36.0" layoutY="168.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="410.0" styleClass="code_text" text="static" wrapText="true" />
+                        <RadioButton fx:id="rb4" layoutX="36.0" layoutY="207.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="410.0" styleClass="code_text" text="private" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <Button layoutX="36.0" layoutY="1568.0" mnemonicParsing="false" onAction="#checkLevel4Test" styleClass="check_button" stylesheets="@css/Level4App.css" text="Проверить" />
+                  <AnchorPane layoutX="36.0" layoutY="745.0" prefHeight="242.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="61.0" prefWidth="551.0" styleClass="h2_" stylesheets="@css/Level4App.css" text="Заполните пустые места, чтобы объявить метод, который принимает один аргумент типа int:" wrapText="true" />
+                        <Label layoutX="26.0" layoutY="90.0" prefHeight="18.0" prefWidth="156.0" styleClass="code_text" stylesheets="@css/Level4App.css" text="public int myFunc(" />
+                        <Label layoutX="26.0" layoutY="112.0" prefHeight="18.0" prefWidth="138.0" styleClass="code_text" stylesheets="@css/Level4App.css" text="  return x * 10;" />
+                        <TextField fx:id="tf2" alignment="TOP_LEFT" layoutX="175.0" layoutY="85.0" prefHeight="28.0" prefWidth="43.0" promptText="____" styleClass="code_text" />
+                        <Label layoutX="218.0" layoutY="90.0" prefHeight="18.0" prefWidth="20.0" styleClass="code_text" stylesheets="@css/Level4App.css" text="x)" />
+                        <TextField fx:id="tf3" alignment="TOP_LEFT" layoutX="234.0" layoutY="85.0" prefHeight="28.0" prefWidth="26.0" promptText="____" styleClass="code_text" />
+                        <TextField fx:id="tf4" alignment="TOP_LEFT" layoutX="16.0" layoutY="127.0" prefHeight="28.0" prefWidth="26.0" promptText="____" styleClass="code_text" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="36.0" layoutY="996.0" prefHeight="290.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="61.0" prefWidth="551.0" styleClass="h2_" stylesheets="@css/Level4App.css" text="Заполните пустые места, чтобы создать метод, который возвращает наименьший из двух параметров:" wrapText="true" />
+                        <Label layoutX="26.0" layoutY="254.0" styleClass="code_text" stylesheets="@css/Level4App.css" text="}" />
+                        <Label layoutX="20.0" layoutY="91.0" prefHeight="18.0" prefWidth="274.0" styleClass="code_text" stylesheets="@css/Level4App.css" text="public int minFunc(int n1,int n2" />
+                        <Label layoutX="59.0" layoutY="115.0" prefHeight="18.0" prefWidth="73.0" styleClass="code_text" stylesheets="@css/Level4App.css" text="int min;" />
+                        <TextField fx:id="tf5" alignment="TOP_LEFT" layoutX="292.0" layoutY="86.0" prefHeight="28.0" prefWidth="26.0" promptText="____" styleClass="code_text" />
+                        <Label layoutX="314.0" layoutY="91.0" prefHeight="18.0" prefWidth="18.0" styleClass="code_text" stylesheets="@css/Level4App.css" text="{" />
+                        <Label layoutX="59.0" layoutY="137.0" prefHeight="18.0" prefWidth="106.0" styleClass="code_text" stylesheets="@css/Level4App.css" text="if (n1 &gt; n2)" />
+                        <TextField fx:id="tf6" alignment="TOP_LEFT" layoutX="121.0" layoutY="156.0" prefHeight="28.0" prefWidth="37.0" promptText="____" styleClass="code_text" />
+                        <Label layoutX="59.0" layoutY="161.0" prefHeight="18.0" prefWidth="71.0" styleClass="code_text" stylesheets="@css/Level4App.css" text="  min = " />
+                        <Label layoutX="159.0" layoutY="160.0" prefHeight="18.0" prefWidth="71.0" styleClass="code_text" stylesheets="@css/Level4App.css" text=";" />
+                        <TextField fx:id="tf7" alignment="TOP_LEFT" layoutX="51.0" layoutY="179.0" prefHeight="28.0" prefWidth="53.0" promptText="____" styleClass="code_text" />
+                        <Label layoutX="61.0" layoutY="206.0" prefHeight="18.0" prefWidth="102.0" styleClass="code_text" stylesheets="@css/Level4App.css" text="  min = n1; " />
+                        <TextField fx:id="tf8" alignment="TOP_LEFT" layoutX="49.0" layoutY="228.0" prefHeight="28.0" prefWidth="74.0" promptText="____" styleClass="code_text" />
+                        <Label layoutX="118.0" layoutY="233.0" prefHeight="18.0" prefWidth="102.0" styleClass="code_text" stylesheets="@css/Level4App.css" text="min; " />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="36.0" layoutY="1301.0" prefHeight="242.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level4App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="61.0" prefWidth="551.0" styleClass="h2_" stylesheets="@css/Level4App.css" text="Заполните пустые места, чтобы создать класс с методом &quot;myFunc&quot;, который не принимает параметров, возвращает void, т выводит &quot;Hi&quot; на экран:" wrapText="true" />
+                        <Label layoutX="26.0" layoutY="90.0" prefHeight="18.0" prefWidth="55.0" styleClass="code_text" stylesheets="@css/Level4App.css" text="public" />
+                        <Label layoutX="26.0" layoutY="112.0" prefHeight="18.0" prefWidth="74.0" styleClass="code_text" stylesheets="@css/Level4App.css" text="  public" />
+                        <TextField fx:id="tf9" alignment="TOP_LEFT" layoutX="77.0" layoutY="85.0" prefHeight="28.0" prefWidth="61.0" promptText="____" styleClass="code_text" />
+                        <Label layoutX="140.0" layoutY="90.0" prefHeight="18.0" prefWidth="65.0" styleClass="code_text" stylesheets="@css/Level4App.css" text="MyClass" />
+                        <TextField fx:id="tf10" alignment="TOP_LEFT" layoutX="203.0" layoutY="85.0" prefHeight="28.0" prefWidth="26.0" promptText="____" styleClass="code_text" />
+                        <TextField fx:id="tf11" alignment="TOP_LEFT" layoutX="95.0" layoutY="107.0" prefHeight="28.0" prefWidth="51.0" promptText="____" styleClass="code_text" />
+                        <Label layoutX="148.0" layoutY="112.0" prefHeight="18.0" prefWidth="59.0" styleClass="code_text" stylesheets="@css/Level4App.css" text="myFunc" />
+                        <TextField fx:id="tf12" alignment="TOP_LEFT" layoutX="201.0" layoutY="108.0" prefHeight="28.0" prefWidth="36.0" promptText="____" styleClass="code_text" />
+                        <Label layoutX="239.0" layoutY="113.0" prefHeight="18.0" prefWidth="59.0" styleClass="code_text" stylesheets="@css/Level4App.css" text="{" />
+                        <Label layoutX="26.0" layoutY="135.0" prefHeight="18.0" prefWidth="258.0" styleClass="code_text" stylesheets="@css/Level4App.css" text="    System.out.println(&quot;Hi&quot;);" />
+                        <Label layoutX="27.0" layoutY="153.0" prefHeight="18.0" prefWidth="258.0" styleClass="code_text" stylesheets="@css/Level4App.css" text="  }" />
+                        <Label layoutX="30.0" layoutY="171.0" prefHeight="18.0" prefWidth="258.0" styleClass="code_text" stylesheets="@css/Level4App.css" text="}" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

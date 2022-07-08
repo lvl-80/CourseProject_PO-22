@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="728.0" prefWidth="915.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lvl80.lingua.Level3.Level3AppController">
+   <children>
+      <VBox prefHeight="728.0" prefWidth="263.0" style="-fx-background-color: black;">
+         <padding>
+            <Insets left="25.0" top="210.0" />
+         </padding>
+         <children>
+            <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#showSubtheme1" prefHeight="24.0" prefWidth="265.0" styleClass="theme_button" stylesheets="@css/Level3App.css" text="Массивы" textFill="WHITE" />
+            <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#showSubtheme2" prefHeight="24.0" prefWidth="265.0" styleClass="theme_button" stylesheets="@css/Level3App.css" text="Сложение элементов" textFill="WHITE" />
+            <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#showSubtheme3" prefHeight="24.0" prefWidth="265.0" styleClass="theme_button" stylesheets="@css/Level3App.css" text="Улучшенный цикл for" textFill="WHITE" />
+            <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#showSubtheme4" prefHeight="24.0" prefWidth="265.0" styleClass="theme_button" stylesheets="@css/Level3App.css" text="Многомерные массивы" textFill="WHITE" />
+            <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#showSubtheme5" prefHeight="24.0" prefWidth="265.0" style="-fx-background-color: #fed15a; -fx-text-fill: black;" styleClass="theme_button" stylesheets="@css/Level3App.css" text="Тест" textFill="WHITE" />
+         </children>
+      </VBox>
+      <AnchorPane layoutX="132.0" layoutY="12.0" prefHeight="22.0" prefWidth="0.0" style="-fx-background-color: white; -fx-background-radius: 30;">
+         <children>
+            <AnchorPane layoutX="-123.0" layoutY="-2.0" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: white; -fx-background-radius: 90;" styleClass="back_button" />
+            <Label layoutX="-108.0" prefHeight="32.0" prefWidth="16.0" text="&lt;" textFill="#000001">
+               <font>
+                  <Font name="Bison Bold" size="28.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Button layoutX="-122.0" layoutY="-2.0" mnemonicParsing="false" onAction="#backToLobby" opacity="0.0" prefHeight="40.0" prefWidth="40.0" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+      <ScrollPane fx:id="sp1" layoutX="261.0" layoutY="-2.0" prefHeight="730.0" prefWidth="680.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1553.0" prefWidth="662.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="36.0" layoutY="45.0" styleClass="h1_" stylesheets="@css/Level3App.css" text="Массивы" />
+                  <AnchorPane layoutX="36.0" layoutY="122.0" prefHeight="200.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level3App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="178.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level3App.css" text="Массив является коллекцией переменных одного типа.  Если вам необходимо хранить список значений, например чисел, то вы можете хранить их в массиве, вместо объявления отдельных переменных для каждого числа.  Чтобы объявить массив, вам необходимо определить тип элемента с квадратными скобками.  Например, чтобы объявить целочисленный массив:" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="337.0" prefHeight="63.0" prefWidth="402.0" styleClass="code" stylesheets="@css/Level3App.css" text="&#10;int[ ] arr;" />
+                  <AnchorPane layoutX="36.0" layoutY="412.0" prefHeight="154.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level3App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="134.0" prefWidth="498.0" styleClass="h2_" stylesheets="@css/Level3App.css" text="Имя массива arr. Типом содержащихся в нем элементов является int.  Теперь вам необходимо определить длину массива, или количество элементов, которые он будет хранить. Чтобы это сделать, используйте ключевое слово new." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="577.0" prefHeight="64.0" prefWidth="402.0" styleClass="code" stylesheets="@css/Level3App.css" text="&#10;int[ ] arr = new int[5];" />
+                  <AnchorPane layoutX="36.0" layoutY="656.0" prefHeight="176.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level3App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="145.0" prefWidth="498.0" styleClass="h2_" stylesheets="@css/Level3App.css" text="В вышеуказанном коде объявлен массив 5 целых чисел. В массиве все элементы упорядочены и каждый имеет определенную и постоянную позицию, которая называется индексом.  Чтобы обратиться к элементу массива, введите имя массива с его индексом в квадратных скобках." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="846.0" prefHeight="57.0" prefWidth="388.0" styleClass="code" stylesheets="@css/Level3App.css" text="&#10;arr[2] = 42;" />
+                  <AnchorPane layoutX="36.0" layoutY="915.0" prefHeight="84.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level3App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="49.0" prefWidth="498.0" styleClass="h2_" stylesheets="@css/Level3App.css" text="Таким образом присваивается значение 42 элементу, имеющему индекс 2." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="36.0" layoutY="1027.0" styleClass="h1_" stylesheets="@css/Level3App.css" text="Инициализация Массивов" />
+                  <AnchorPane layoutX="36.0" layoutY="1084.0" prefHeight="122.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level3App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="95.0" prefWidth="498.0" styleClass="h2_" stylesheets="@css/Level3App.css" text="Java имеет сокращенный способ инстанциирования массивов примитивных типов и строк.  Если вы уже знаете, какие значения использовать в массиве, то вы можете использовать массив литералов." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="1219.0" prefHeight="157.0" prefWidth="449.0" styleClass="code" stylesheets="@css/Level3App.css" text="&#10;public class Program {&#10;    public static void main(String[] args) {&#10;        String[ ] myNames = { &quot;A&quot;, &quot;B&quot;, &quot;C&quot;, &quot;D&quot;};&#10;        System.out.println(myNames[2]);&#10;    }&#10;}" />
+                  <AnchorPane layoutX="36.0" layoutY="1386.0" prefHeight="122.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level3App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="95.0" prefWidth="498.0" styleClass="h2_" stylesheets="@css/Level3App.css" text="Разместите значения в списке разделенном запятыми, закрытым в фигурные скобки.  Вышеуказанный код автоматически инициализирует массив, содержащий 4 элемента и сохраняет полученные значения." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+               </children></AnchorPane>
+        </content>
+      </ScrollPane>
+      <ScrollPane fx:id="sp2" layoutX="261.0" layoutY="-1.0" prefHeight="734.0" prefWidth="680.0" visible="false">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1000.0" prefWidth="662.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="36.0" layoutY="45.0" prefHeight="30.0" prefWidth="348.0" styleClass="h1_" stylesheets="@css/Level3App.css" text="Длина Массива" />
+                  <AnchorPane layoutX="36.0" layoutY="122.0" prefHeight="66.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level3App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="40.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level3App.css" text="Вы можете получить доступ к длине массива (количеству хранимых им элементов) с помощью свойства length." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="205.0" prefHeight="146.0" prefWidth="487.0" styleClass="code" stylesheets="@css/Level3App.css" text="&#10;public class Program {&#10;    public static void main(String[] args) {&#10;        int[ ] intArr = new int[5];&#10;        System.out.println(intArr.length);&#10;    }&#10;}" />
+                  <Label layoutX="36.0" layoutY="383.0" prefHeight="30.0" prefWidth="348.0" styleClass="h1_" stylesheets="@css/Level3App.css" text="Сложение элементов" />
+                  <AnchorPane layoutX="36.0" layoutY="443.0" prefHeight="158.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level3App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="135.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level3App.css" text="Теперь, так как мы знаем как задать значения элементов массивов и получить эти значения, мы можем посчитать сумму всех элементов массива, используя циклы.  Цикл for наиболее часто используется при работе с массивами, потому что мы можем использовать свойство массива length чтобы определить, сколько раз запустить цикл." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="613.0" prefHeight="220.0" prefWidth="513.0" styleClass="code" stylesheets="@css/Level3App.css" text="&#10;public class Program {&#10;    public static void main(String[] args) {&#10;        int [ ] myArr = {6, 42, 3, 7};&#10;        int sum=0;&#10;        for(int x=0; x&lt;myArr.length; x++) {&#10;            sum += myArr[x];&#10;        }&#10;        System.out.println(sum);&#10;    }&#10;}" />
+                  <AnchorPane layoutX="36.0" layoutY="843.0" prefHeight="128.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level3App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="101.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level3App.css" text="В вышеуказанном коде мы объявили переменную sum для хранения результата и присвоили ей 0. Затем мы использовали цикл for для итерации по массиву, и добавили значение каждого элемента переменной." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <ScrollPane fx:id="sp3" layoutX="263.0" layoutY="-2.0" prefHeight="734.0" prefWidth="680.0" visible="false">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="741.0" prefWidth="662.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="36.0" layoutY="45.0" prefHeight="30.0" prefWidth="348.0" styleClass="h1_" stylesheets="@css/Level3App.css" text="Улучшенный Цикл for" />
+                  <TextArea editable="false" layoutX="36.0" layoutY="244.0" prefHeight="213.0" prefWidth="522.0" styleClass="code" stylesheets="@css/Level3App.css" text="&#10;public class Program {&#10;    public static void main(String[] args) {&#10;        int[ ] primes = {2, 3, 5, 7};&#10;        &#10;        for (int t: primes) {&#10;            System.out.println(t); &#10;        }&#10;    }&#10;}" />
+                  <AnchorPane layoutX="36.0" layoutY="103.0" prefHeight="126.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level3App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="96.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level3App.css" text="Улучшенный цикл for (иногда называется циклом &quot;for each&quot;) используется для перебора элементов в массиве. Преимуществами его использования являются исключение возможности ошибки и улучшение читаемости кода." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="36.0" layoutY="471.0" prefHeight="195.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level3App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="171.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level3App.css" text="Улучшенный цикл for объявляет переменную типа, совместимого с элементами массива, к которым получен доступ. Переменная будет доступна внутри блока for, и его значение будет идентично текущему элементу массива.  Итак, на каждой итерации цикла, переменная t будет равна соответствующему элементу массива." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <ScrollPane fx:id="sp4" layoutX="263.0" prefHeight="733.0" prefWidth="680.0" visible="false">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1085.0" prefWidth="662.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="36.0" layoutY="45.0" prefHeight="30.0" prefWidth="510.0" styleClass="h1_" stylesheets="@css/Level3App.css" text="Многомерные Массивы" />
+                  <TextArea editable="false" layoutX="36.0" layoutY="256.0" prefHeight="61.0" prefWidth="398.0" styleClass="code" stylesheets="@css/Level3App.css" text="&#10;int[ ][ ] sample = { {1, 2, 3}, {4, 5, 6} };" />
+                  <AnchorPane layoutX="36.0" layoutY="103.0" prefHeight="141.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level3App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="112.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level3App.css" text="Многомерными массивами являются массивы, которые содержат другие массивы. Двухмерный массив является наиболее часто применяемым многомерным массивом.   Для создания многомерного массива разместите каждый массив внутри своей пары квадратных скобок." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="36.0" layoutY="327.0" prefHeight="146.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level3App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="123.0" prefWidth="537.0" styleClass="h2_" stylesheets="@css/Level3App.css" text="Таким образом объявляется массив с двумя массивами в элементе. Для получения доступа к элементу двухмерного массива необходимо предоставить два индекса, один для массива, а другой для элемента этого массива.   Следующий пример получает доступ к первому элементу второго массива." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="484.0" prefHeight="170.0" prefWidth="477.0" styleClass="code" stylesheets="@css/Level3App.css" text="&#10;public class Program {&#10;    public static void main(String[] args) {&#10;        int[ ][ ] sample = { {1, 2, 3}, {4, 5, 6} }; &#10;        int x = sample[1][0];&#10;        System.out.println(x);&#10;    }&#10;}" />
+                  <AnchorPane layoutX="35.0" layoutY="664.0" prefHeight="82.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level3App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="57.0" prefWidth="537.0" styleClass="h2_" stylesheets="@css/Level3App.css" text="Вы можете получить и установить элементы многомерного массива используя такую же пару квадратных скобок." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="35.0" layoutY="756.0" prefHeight="197.0" prefWidth="508.0" styleClass="code" stylesheets="@css/Level3App.css" text="&#10;public class Program {&#10;    public static void main(String[] args) {&#10;        int[ ][ ] myArr = { {1, 2, 3}, {4}, {5, 6, 7} };&#10;        myArr[0][2] = 42;&#10;        int x = myArr[1][0];&#10;        &#10;        System.out.println(x);&#10;    }&#10;}" />
+                  <AnchorPane layoutX="35.0" layoutY="964.0" prefHeight="97.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level3App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="75.0" prefWidth="537.0" styleClass="h2_" stylesheets="@css/Level3App.css" text="В вышеуказанном двухмерном массиве содержится три массива. Первый массив имеет три элемента, второй имеет один элемент, а третий имеет три элемента." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <ScrollPane fx:id="sp5" layoutX="263.0" prefHeight="734.0" prefWidth="680.0" visible="false">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1175.0" prefWidth="662.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="36.0" layoutY="45.0" prefHeight="30.0" prefWidth="510.0" styleClass="h1_" stylesheets="@css/Level3App.css" text="Тест" />
+                  <AnchorPane layoutX="36.0" layoutY="103.0" prefHeight="142.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level3App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="121.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level3App.css" text="Для получения следующего уровня, необходимо пройти тест, состоящий из разных вопросов и способов ответа на них. " wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="36.0" layoutY="260.0" prefHeight="36.0" prefWidth="499.0" style="-fx-background-color: #fed15a;" styleClass="subblock" stylesheets="@css/Level3App.css">
+                     <children>
+                        <Label layoutX="18.0" layoutY="5.0" prefHeight="40.0" prefWidth="463.0" styleClass="h3_" stylesheets="@css/Level3App.css" text="После прохождения этого теста вы получите 4й уровень" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="35.0" layoutY="320.0" prefHeight="242.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level3App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="29.0" prefWidth="551.0" styleClass="h2_" stylesheets="@css/Level3App.css" text="Что выведет следующий код?" wrapText="true" />
+                        <TextField fx:id="tf1" alignment="TOP_LEFT" layoutX="497.0" layoutY="184.0" prefHeight="28.0" prefWidth="47.0" promptText="___" styleClass="code_text" />
+                        <Label layoutX="26.0" layoutY="43.0" prefHeight="29.0" prefWidth="551.0" styleClass="h2_" stylesheets="@css/Level3App.css" text="int arr[] = new int[3];" wrapText="true" />
+                        <Label layoutX="26.0" layoutY="65.0" prefHeight="29.0" prefWidth="551.0" styleClass="h2_" stylesheets="@css/Level3App.css" text="for (int i = 0; i &lt; 3; i++){" wrapText="true" />
+                        <Label layoutX="26.0" layoutY="84.0" prefHeight="29.0" prefWidth="551.0" styleClass="h2_" stylesheets="@css/Level3App.css" text="    arr[i] = i;" wrapText="true" />
+                        <Label layoutX="26.0" layoutY="102.0" prefHeight="29.0" prefWidth="551.0" styleClass="h2_" stylesheets="@css/Level3App.css" text="}" wrapText="true" />
+                        <Label layoutX="26.0" layoutY="121.0" prefHeight="29.0" prefWidth="551.0" styleClass="h2_" stylesheets="@css/Level3App.css" text="int res = arr[0] + arr[2];" wrapText="true" />
+                        <Label layoutX="26.0" layoutY="142.0" prefHeight="29.0" prefWidth="238.0" styleClass="h2_" stylesheets="@css/Level3App.css" text="System.out.println(res);" wrapText="true" />
+                        <Label layoutX="443.0" layoutY="181.0" prefHeight="29.0" prefWidth="63.0" styleClass="h2_" stylesheets="@css/Level3App.css" text="Ответ:" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <Button layoutX="36.0" layoutY="1094.0" mnemonicParsing="false" onAction="#checkLevel3Test" styleClass="check_button" stylesheets="@css/Level3App.css" text="Проверить" />
+                  <AnchorPane layoutX="36.0" layoutY="828.0" prefHeight="242.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level3App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="61.0" prefWidth="551.0" styleClass="h2_" stylesheets="@css/Level3App.css" text="Заполните пустые места, чтобы посчитать сумму элементов массива &quot;arr&quot; используя улучшенный цикл for:" wrapText="true" />
+                        <Label layoutX="26.0" layoutY="90.0" prefHeight="18.0" prefWidth="115.0" styleClass="code_text" stylesheets="@css/Level3App.css" text="int res = 0;" />
+                        <Label layoutX="59.0" layoutY="112.0" prefHeight="18.0" prefWidth="65.0" styleClass="code_text" stylesheets="@css/Level3App.css" text="(int el" />
+                        <Label layoutX="26.0" layoutY="148.0" styleClass="code_text" stylesheets="@css/Level3App.css" text="}" />
+                        <Label layoutX="63.0" layoutY="132.0" prefHeight="18.0" prefWidth="59.0" styleClass="code_text" stylesheets="@css/Level3App.css" text="res += " />
+                        <TextField fx:id="tf3" alignment="TOP_LEFT" layoutX="17.0" layoutY="107.0" prefHeight="28.0" prefWidth="44.0" promptText="___" styleClass="code_text" />
+                        <TextField fx:id="tf4" alignment="TOP_LEFT" layoutX="118.0" layoutY="107.0" prefHeight="28.0" prefWidth="29.0" promptText="_" styleClass="code_text" />
+                        <Label layoutX="150.0" layoutY="111.0" prefHeight="18.0" prefWidth="44.0" styleClass="code_text" stylesheets="@css/Level3App.css" text="arr){" />
+                        <TextField fx:id="tf5" alignment="TOP_LEFT" layoutX="114.0" layoutY="127.0" prefHeight="28.0" prefWidth="35.0" promptText="___" styleClass="code_text" />
+                        <Label layoutX="149.0" layoutY="131.0" prefHeight="18.0" prefWidth="14.0" styleClass="code_text" stylesheets="@css/Level3App.css" text=";" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="36.0" layoutY="573.0" prefHeight="242.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level3App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="29.0" prefWidth="551.0" styleClass="h2_" stylesheets="@css/Level3App.css" text="Что выведет следующий код?" wrapText="true" />
+                        <TextField fx:id="tf2" alignment="TOP_LEFT" layoutX="497.0" layoutY="184.0" prefHeight="28.0" prefWidth="47.0" promptText="___" styleClass="code_text" />
+                        <Label layoutX="26.0" layoutY="43.0" prefHeight="29.0" prefWidth="551.0" styleClass="h2_" stylesheets="@css/Level3App.css" text="int result = 0;" wrapText="true" />
+                        <Label layoutX="26.0" layoutY="65.0" prefHeight="29.0" prefWidth="551.0" styleClass="h2_" stylesheets="@css/Level3App.css" text="for (int i = 0; i &lt; 5; i++){" wrapText="true" />
+                        <Label layoutX="26.0" layoutY="84.0" prefHeight="29.0" prefWidth="551.0" styleClass="h2_" stylesheets="@css/Level3App.css" text="    if (i == 3){" wrapText="true" />
+                        <Label layoutX="26.0" layoutY="102.0" prefHeight="29.0" prefWidth="551.0" styleClass="h2_" stylesheets="@css/Level3App.css" text="        result += 10;" wrapText="true" />
+                        <Label layoutX="26.0" layoutY="121.0" prefHeight="29.0" prefWidth="551.0" styleClass="h2_" stylesheets="@css/Level3App.css" text="    } else" wrapText="true" />
+                        <Label layoutX="26.0" layoutY="142.0" prefHeight="29.0" prefWidth="238.0" styleClass="h2_" stylesheets="@css/Level3App.css" text="        result += i;" wrapText="true" />
+                        <Label layoutX="443.0" layoutY="181.0" prefHeight="29.0" prefWidth="63.0" styleClass="h2_" stylesheets="@css/Level3App.css" text="Ответ:" wrapText="true" />
+                        <Label layoutX="26.0" layoutY="165.0" prefHeight="29.0" prefWidth="238.0" styleClass="h2_" stylesheets="@css/Level3App.css" text="}" wrapText="true" />
+                        <Label layoutX="26.0" layoutY="196.0" prefHeight="29.0" prefWidth="283.0" styleClass="h2_" stylesheets="@css/Level3App.css" text="System.out.println(result);" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

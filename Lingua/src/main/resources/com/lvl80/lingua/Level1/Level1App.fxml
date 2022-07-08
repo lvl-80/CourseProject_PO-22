@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="728.0" prefWidth="915.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lvl80.lingua.Level1.Level1AppController">
+   <children>
+      <VBox prefHeight="728.0" prefWidth="263.0" style="-fx-background-color: black;">
+         <padding>
+            <Insets left="25.0" top="210.0" />
+         </padding>
+         <children>
+            <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#showSubtheme1" prefHeight="24.0" prefWidth="265.0" styleClass="theme_button" stylesheets="@css/Level1App.css" text="Введение в Java" textFill="WHITE" />
+            <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#showSubtheme2" prefHeight="24.0" prefWidth="265.0" styleClass="theme_button" stylesheets="@css/Level1App.css" text="Программа &quot;Hello World&quot;" textFill="WHITE" />
+            <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#showSubtheme3" prefHeight="24.0" prefWidth="265.0" styleClass="theme_button" stylesheets="@css/Level1App.css" text="Комментарии Java" textFill="WHITE" />
+            <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#showSubtheme4" prefHeight="24.0" prefWidth="265.0" styleClass="theme_button" stylesheets="@css/Level1App.css" text="Переменные" textFill="WHITE" />
+            <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#showSubtheme5" prefHeight="21.0" prefWidth="263.0" styleClass="theme_button" stylesheets="@css/Level1App.css" text="Пользовательский ввод" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+            <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#showSubtheme6" prefHeight="24.0" prefWidth="265.0" styleClass="theme_button" stylesheets="@css/Level1App.css" text="Примитивные операторы" textFill="WHITE" />
+            <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#showSubtheme7" prefHeight="24.0" prefWidth="265.0" styleClass="theme_button" stylesheets="@css/Level1App.css" text="Увеличение и уменьшение" textFill="WHITE" />
+            <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#showSubtheme8" prefHeight="24.0" prefWidth="265.0" styleClass="theme_button" stylesheets="@css/Level1App.css" text="Строки" textFill="WHITE" />
+            <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#showSubtheme9" prefHeight="24.0" prefWidth="265.0" style="-fx-background-color: #fed15a; -fx-text-fill: black;" styleClass="theme_button" stylesheets="@css/Level1App.css" text="Тест" textFill="WHITE" />
+         </children>
+      </VBox>
+      <AnchorPane layoutX="132.0" layoutY="12.0" prefHeight="22.0" prefWidth="0.0" style="-fx-background-color: white; -fx-background-radius: 30;">
+         <children>
+            <AnchorPane layoutX="-123.0" layoutY="-2.0" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: white; -fx-background-radius: 90;" styleClass="back_button" />
+            <Label layoutX="-108.0" prefHeight="32.0" prefWidth="16.0" text="&lt;" textFill="#000001">
+               <font>
+                  <Font name="Bison Bold" size="28.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Button layoutX="-122.0" layoutY="-2.0" mnemonicParsing="false" onAction="#backToLobby" opacity="0.0" prefHeight="40.0" prefWidth="40.0" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+      <ScrollPane fx:id="sp1" layoutX="261.0" layoutY="-2.0" prefHeight="730.0" prefWidth="680.0" visible="true">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="730.0" prefWidth="662.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="36.0" layoutY="45.0" styleClass="h1_" stylesheets="@css/Level1App.css" text="Добро пожаловать в Java" />
+                  <AnchorPane layoutX="36.0" layoutY="122.0" prefHeight="256.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level1App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="217.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level1App.css" text="Java это современный язык программирования высокого уровня, разработанный в первой половине 1990-х компанией Sun Microsystems, в последующем приобретённой компанией Oracle.   Java является Платформо-Независимым языком программирования, что значит, что вам необходимо написать программу один раз, чтобы запустить ее на множестве различных платформ!  Java является переносимым, строго типизированным, и динамическим языком программирования, с возможностью соответствия потребностям практически любого типа приложения." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="36.0" layoutY="394.0" prefHeight="163.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level1App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="135.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level1App.css" text="Более 3 миллиардов устройств поддерживают Java.   Язык программирования Java используется для разработки приложений под Google Android OS, различных Настольных Приложений, например медиа-плееров, антивирусных программ, Веб Приложений, Корпоративных Приложений (например в банковской сфере), и многое другое!" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="36.0" layoutY="578.0" prefHeight="59.0" prefWidth="446.0" style="-fx-background-color: #fed15a;" styleClass="subblock" stylesheets="@css/Level1App.css">
+                     <children>
+                        <Label layoutX="14.0" layoutY="10.0" prefHeight="40.0" prefWidth="424.0" styleClass="h3_" stylesheets="@css/Level1App.css" text="Java гарантирует, что вы можете написать программу один раз, и запускать ее на любых платформах." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+               </children></AnchorPane>
+        </content>
+      </ScrollPane>
+      <ScrollPane fx:id="sp2" layoutX="261.0" layoutY="-1.0" prefHeight="731.0" prefWidth="680.0" visible="false">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1497.0" prefWidth="662.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="36.0" layoutY="45.0" prefHeight="30.0" prefWidth="348.0" styleClass="h1_" stylesheets="@css/Level1App.css" text="Программа &quot;Hello World&quot;" />
+                  <AnchorPane layoutX="36.0" layoutY="122.0" prefHeight="66.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level1App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="40.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level1App.css" text="Давайте начнем с создания простой программы, которая выводит на экран текст &quot;Hello World&quot;." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="37.0" layoutY="205.0" prefHeight="134.0" prefWidth="402.0" styleClass="code" stylesheets="@css/Level1App.css" text="&#10;class MyClass {&#10;    public static void main(String[ ] args) {&#10;        System.out.println(&quot;Hello World&quot;);&#10;    }&#10;}" />
+                  <AnchorPane layoutX="36.0" layoutY="353.0" prefHeight="181.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level1App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="7.0" prefHeight="170.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level1App.css" text="В Java, каждая строка кода, которая может быть запущена, должна быть внутри класса. В нашем примере, мы назвали класс MyClass. Вы узнаете больше о классах в последующих модулях.  В Java, каждое приложение имеет точку входа, или точку старта, которая является методом с именем main. Метод main и ключевые слова public и static будут разъяснены позже." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="36.0" layoutY="565.0" prefHeight="30.0" prefWidth="348.0" styleClass="h1_" stylesheets="@css/Level1App.css" text="Метод main" />
+                  <AnchorPane layoutX="36.0" layoutY="612.0" prefHeight="66.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level1App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="40.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level1App.css" text="Для запуска нашей программы, метод main должен быть идентичен следующей записи:" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="37.0" layoutY="692.0" prefHeight="65.0" prefWidth="402.0" styleClass="code" stylesheets="@css/Level1App.css" text="&#10;public static void main(String[ ] args)" />
+                  <AnchorPane layoutX="36.0" layoutY="777.0" prefHeight="227.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level1App.css">
+                     <children>
+                        <Label layoutX="92.0" layoutY="20.0" prefHeight="186.0" prefWidth="439.0" styleClass="h2_" stylesheets="@css/Level1App.css" text="- public: любой может получить к нему доступ  - static: метод может быть запущен без создания экземпляра класса, содержащего метод main  - void: метод не возвращает значение  - main: имя метода  Например, следующий код объявляет метод test, который не возвращает ничего и не имеет параметров:" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="1023.0" prefHeight="65.0" prefWidth="402.0" styleClass="code" stylesheets="@css/Level1App.css" text="&#10;void test()" />
+                  <Label layoutX="36.0" layoutY="1115.0" prefHeight="30.0" prefWidth="348.0" styleClass="h1_" stylesheets="@css/Level1App.css" text="System.out.println()" />
+                  <AnchorPane layoutX="36.0" layoutY="1165.0" prefHeight="66.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level1App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="40.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level1App.css" text="Далее следует тело метода main, заключенное в фигурные скобки:" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="1245.0" prefHeight="103.0" prefWidth="402.0" styleClass="code" stylesheets="@css/Level1App.css" text="&#10;{ &#10;   System.out.println(&quot;Hello World!&quot;); &#10;}" />
+                  <AnchorPane layoutX="36.0" layoutY="1362.0" prefHeight="103.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level1App.css">
+                     <children>
+                        <Label layoutX="23.0" layoutY="16.0" prefHeight="69.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level1App.css" text="Метод println выводит строку текста на экран. Класс System и его поток out используются для получения доступа к методу println." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <ScrollPane fx:id="sp3" layoutX="261.0" layoutY="-1.0" prefHeight="730.0" prefWidth="680.0" visible="false">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1960.0" prefWidth="662.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="36.0" layoutY="45.0" prefHeight="30.0" prefWidth="348.0" styleClass="h1_" stylesheets="@css/Level1App.css" text="Комментарии Java" />
+                  <AnchorPane layoutX="36.0" layoutY="122.0" prefHeight="192.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level1App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="163.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level1App.css" text="Целью включения комментариев в ваш код является объяснение, что делает ваша программа. Java поддерживает и однострочные, и многострочные комментарии. Все символы, которые находятся внутри комментариев, игнорируются Java компилятором.  Однострочный комментарий начинается с двух косых черт (слэшей) и продолжается до окончания строки." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="323.0" prefHeight="86.0" prefWidth="402.0" styleClass="code" stylesheets="@css/Level1App.css" text="&#10;// this is a single-line comment &#10;x = 5; // a single-line comment after code" />
+                  <Label layoutX="36.0" layoutY="445.0" prefHeight="30.0" prefWidth="411.0" styleClass="h1_" stylesheets="@css/Level1App.css" text="Многострочные Комментарии" />
+                  <AnchorPane layoutX="36.0" layoutY="509.0" prefHeight="132.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level1App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="103.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level1App.css" text="Java также поддерживает комментарии, которые занимают несколько строк. Такой комментарий начинается с символа косой черты, за которым следует символ звездочки, и заканчивается символом звездочки, за которым следует символ косой черты." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="651.0" prefHeight="103.0" prefWidth="402.0" styleClass="code" stylesheets="@css/Level1App.css" text="&#10;/*  This is also a &#10;    comment spanning &#10;    multiple lines */" />
+                  <AnchorPane layoutX="36.0" layoutY="765.0" prefHeight="132.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level1App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="103.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level1App.css" text="Обратите внимание, что Java не поддерживает вложенные многострочные комментарии.  Однако, вы можете вложить однострочные комментарии внутри многострочных комментариев." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="906.0" prefHeight="132.0" prefWidth="402.0" styleClass="code" stylesheets="@css/Level1App.css" text="&#10;/* This is a single-line comment: &#10; &#10;    // a single-line comment &#10; &#10; */" />
+                  <AnchorPane layoutX="36.0" layoutY="1049.0" prefHeight="59.0" prefWidth="446.0" style="-fx-background-color: #fed15a;" styleClass="subblock" stylesheets="@css/Level1App.css">
+                     <children>
+                        <Label layoutX="14.0" layoutY="10.0" prefHeight="40.0" prefWidth="424.0" styleClass="h3_" stylesheets="@css/Level1App.css" text="Другим названием многострочного комментария является блочный комментарий." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="36.0" layoutY="1143.0" prefHeight="30.0" prefWidth="411.0" styleClass="h1_" stylesheets="@css/Level1App.css" text="Комментарии Документации" />
+                  <AnchorPane layoutX="36.0" layoutY="1205.0" prefHeight="181.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level1App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="156.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level1App.css" text="Комментарии документации это специальные комментарии, которые выглядят как многострочные комментарии, но отличаются тем, что они генерируют внешнюю документацию вашего исходного кода. Они начинаются с символа косой черты, за которым следует два символа звездочки, и заканчивается символом звездочки, за которым следует символ косой черты." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="1395.0" prefHeight="132.0" prefWidth="402.0" styleClass="code" stylesheets="@css/Level1App.css" text="&#10;/** This is a documentation comment */ &#10; &#10;/** This is also a &#10;    documentation comment */" />
+                  <AnchorPane layoutX="36.0" layoutY="1537.0" prefHeight="206.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level1App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="182.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level1App.css" text="Javadoc это инструмент, который включен в JDK и используется для генерации документации Java кода в HTML формате из исходного Java кода, которому необходима документация в предопределенном формате.  Если комментарий документации начинается более чем с двух символов звездочки, то Javadoc предполагает, что вы хотели создать &quot;блок&quot; вокруг вашего комментария в исходном коде. Дополнительные символы звездочки просто игнорируются." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="1754.0" prefHeight="132.0" prefWidth="402.0" styleClass="code" stylesheets="@css/Level1App.css" text="&#10;/****** &#10; &#10;This is the start of a method &#10; &#10;*******/" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <ScrollPane fx:id="sp4" layoutX="263.0" layoutY="-2.0" prefHeight="735.0" prefWidth="680.0" visible="false">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1092.0" prefWidth="662.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="36.0" layoutY="45.0" prefHeight="30.0" prefWidth="348.0" styleClass="h1_" stylesheets="@css/Level1App.css" text="Переменные" />
+                  <TextArea editable="false" layoutX="36.0" layoutY="455.0" prefHeight="60.0" prefWidth="402.0" styleClass="code" stylesheets="@css/Level1App.css" text="&#10;String name = &quot;David&quot;;" />
+                  <AnchorPane layoutX="36.0" layoutY="103.0" prefHeight="336.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level1App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="319.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level1App.css" text="Переменные хранят данные для обработки. Переменным задается имя (или идентификатор), например area, age, height, и т.п. Имя уникально идентифицирует каждую переменную, присваивая значение переменной и получая хранящееся в переменной значение.  Переменные имеют тип. Несколько примеров: - int: для целых чисел, таких как 123 и -456 - double: для чисел с плавающей точкой или действительных чисел с опциональной десятичной точкой и дробной частью в фиксированной или научной нотации, такой как 3.1416, -55.66. - String: для текста, типа &quot;Hello&quot; или &quot;Good Morning!&quot;. Текстовые строки заключаются внутри двойных кавычек.  Вы можете объявить переменную типа и присвоить ей значение. Пример:" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="36.0" layoutY="529.0" prefHeight="94.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level1App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="73.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level1App.css" text="Таким образом создается переменная с именем name типа String, и ей присваивается значение &quot;David&quot;.Примеры объявления переменных:" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="640.0" prefHeight="185.0" prefWidth="442.0" styleClass="code" stylesheets="@css/Level1App.css" text="&#10;class MyClass {&#10;    public static void main(String[ ] args) {&#10;        String name =&quot;David&quot;;&#10;        int age = 42;&#10;        double score =15.9;&#10;        char group = 'Z';&#10;    }&#10;}" />
+                  <AnchorPane layoutX="36.0" layoutY="841.0" prefHeight="134.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level1App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="114.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level1App.css" text="char значит character(символ) и хранит один символ.  Другим типом является boolean тип, который имеет только два возможных значения: true(истина) и false(ложь). Этот тип данных используется для решения простых условий истинно/ложно." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="1001.0" prefHeight="60.0" prefWidth="402.0" styleClass="code" stylesheets="@css/Level1App.css" text="&#10;boolean online = true;" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <ScrollPane fx:id="sp5" layoutX="263.0" prefHeight="730.0" prefWidth="680.0" visible="false">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1070.0" prefWidth="662.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="36.0" layoutY="45.0" prefHeight="30.0" prefWidth="510.0" styleClass="h1_" stylesheets="@css/Level1App.css" text="Считывание Пользовательского Ввода" />
+                  <TextArea editable="false" layoutX="36.0" layoutY="292.0" prefHeight="60.0" prefWidth="402.0" styleClass="code" stylesheets="@css/Level1App.css" text="&#10;import java.util.Scanner;" />
+                  <AnchorPane layoutX="36.0" layoutY="103.0" prefHeight="176.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level1App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="153.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level1App.css" text="В то время как Java предоставляет много различных методов для считывания пользовательского ввода, объект Scanner является наиболее распространенным, и возможно наиболее легким для применения. Импортируйте класс Scanner для использования объекта Scanner, как отображено далее:" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="36.0" layoutY="361.0" prefHeight="92.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level1App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="76.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level1App.css" text="Чтобы использовать класс Scanner, создайте экземпляр класса с помощью следующего синтаксиса" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="464.0" prefHeight="60.0" prefWidth="402.0" styleClass="code" stylesheets="@css/Level1App.css" text="&#10;Scanner myVar = new Scanner(System.in);" />
+                  <AnchorPane layoutX="36.0" layoutY="534.0" prefHeight="296.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level1App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="283.0" prefWidth="537.0" styleClass="h2_" stylesheets="@css/Level1App.css" text="Теперь вы можете считывать различные виды типов данных, которые вводит пользователь.  Вот несколько методов, которые доступны в классе Scanner: Считать байт - nextByte() Считать число типа short - nextShort() Считать число типа int - nextInt() Считать число типа long - nextLong() Считать число типа float - nextFloat() Считать число типа double - nextDouble() Считать число булевого типа - nextBoolean() Считать целую строку - nextLine() Считать слово - next()   Пример программы, используемой для считывания пользовательского ввода:         " wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="843.0" prefHeight="184.0" prefWidth="525.0" styleClass="code" stylesheets="@css/Level1App.css" text="&#10;import java.util.Scanner;&#10;&#10;class MyClass {&#10;    public static void main(String[ ] args) {&#10;        Scanner myVar = new Scanner(System.in);&#10;        System.out.println(myVar.nextLine());        &#10;    }&#10;}" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <ScrollPane fx:id="sp6" layoutX="263.0" prefHeight="729.0" prefWidth="680.0" visible="false">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="2031.0" prefWidth="662.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="36.0" layoutY="45.0" prefHeight="30.0" prefWidth="510.0" styleClass="h1_" stylesheets="@css/Level1App.css" text="Примитивные Операторы" />
+                  <TextArea editable="false" layoutX="36.0" layoutY="292.0" prefHeight="60.0" prefWidth="402.0" styleClass="code" stylesheets="@css/Level1App.css" text="&#10;int x = 6 + 3;" />
+                  <AnchorPane layoutX="36.0" layoutY="103.0" prefHeight="176.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level1App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="153.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level1App.css" text="Java обеспечивает богатым набором операторов для использования при манипулированиями переменными. Значение, используемое на другой стороне оператора называется операндом.  Например, в выражении ниже, числа 6 и 3 являются операндами оператора плюс:" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="36.0" layoutY="361.0" prefHeight="102.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level1App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="85.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level1App.css" text="Арифметические операторы Java:  + сложение - вычитание * умножение / деление % деление по модулю" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="36.0" layoutY="493.0" prefHeight="30.0" prefWidth="510.0" styleClass="h1_" stylesheets="@css/Level1App.css" text="Сложение" />
+                  <AnchorPane layoutX="36.0" layoutY="550.0" prefHeight="97.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level1App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="69.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level1App.css" text="Оператор + складывает вместе два значения, например две константы, константу и переменную, или переменную и переменную. Несколько примеров сложения:" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="663.0" prefHeight="100.0" prefWidth="402.0" styleClass="code" stylesheets="@css/Level1App.css" text="&#10;int sum1 = 50 + 10;  &#10;int sum2 = sum1 + 66;  &#10;int sum3 = sum2 + sum2;" />
+                  <Label layoutX="36.0" layoutY="791.0" prefHeight="30.0" prefWidth="510.0" styleClass="h1_" stylesheets="@css/Level1App.css" text="Вычитание" />
+                  <AnchorPane layoutX="36.0" layoutY="847.0" prefHeight="73.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level1App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="51.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level1App.css" text="Оператор - вычитает одно значение из другого." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="932.0" prefHeight="100.0" prefWidth="402.0" styleClass="code" stylesheets="@css/Level1App.css" text="&#10;int sum1 = 1000 - 10; &#10;int sum2 = sum1 - 5; &#10;int sum3 = sum1 - sum2;" />
+                  <Label layoutX="36.0" layoutY="1062.0" prefHeight="30.0" prefWidth="510.0" styleClass="h1_" stylesheets="@css/Level1App.css" text="Умножение" />
+                  <AnchorPane layoutX="35.0" layoutY="1118.0" prefHeight="73.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level1App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="51.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level1App.css" text="Оператор * перемножает два значения." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="1202.0" prefHeight="100.0" prefWidth="402.0" styleClass="code" stylesheets="@css/Level1App.css" text="&#10;int sum1 = 1000 * 2; &#10;int sum2 = sum1 * 10; &#10;int sum3 = sum1 * sum2;" />
+                  <Label layoutX="36.0" layoutY="1330.0" prefHeight="30.0" prefWidth="510.0" styleClass="h1_" stylesheets="@css/Level1App.css" text="Деление" />
+                  <AnchorPane layoutX="36.0" layoutY="1383.0" prefHeight="73.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level1App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="51.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level1App.css" text="Оператор / делит одно значение на другое." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="1466.0" prefHeight="100.0" prefWidth="402.0" styleClass="code" stylesheets="@css/Level1App.css" text="&#10;int sum1 = 1000 / 5; &#10;int sum2 = sum1 / 2; &#10;int sum3 = sum1 / sum2;" />
+                  <Label layoutX="36.0" layoutY="1595.0" prefHeight="30.0" prefWidth="510.0" styleClass="h1_" stylesheets="@css/Level1App.css" text="Деление по модулю" />
+                  <AnchorPane layoutX="36.0" layoutY="1653.0" prefHeight="141.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level1App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="122.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level1App.css" text="Математическая операция деления по модулю (или остаток) выполняет целочисленное деление одного значения на другое и возвращает остаток от деления.  Оператором операции деления по модулю является символ процента (%)." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="1808.0" prefHeight="184.0" prefWidth="436.0" styleClass="code" stylesheets="@css/Level1App.css" text="&#10;public class Program {&#10;    public static void main(String[] args) {&#10;        int value = 23;&#10;        int res = value % 6;&#10;&#10;        System.out.println(res);&#10;    }&#10;}" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <ScrollPane fx:id="sp7" layoutX="263.0" prefHeight="732.0" prefWidth="680.0" visible="false">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="2288.0" prefWidth="662.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="36.0" layoutY="45.0" prefHeight="30.0" prefWidth="510.0" styleClass="h1_" stylesheets="@css/Level1App.css" text="Увеличение и уменьшение" />
+                  <TextArea editable="false" layoutX="36.0" layoutY="247.0" prefHeight="190.0" prefWidth="430.0" styleClass="code" stylesheets="@css/Level1App.css" text="&#10;public class Program {&#10;    public static void main(String[] args) {&#10;        int test = 5;&#10;        ++test;&#10;        &#10;        System.out.println(test);&#10;    }&#10;}" />
+                  <AnchorPane layoutX="36.0" layoutY="103.0" prefHeight="129.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level1App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="101.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level1App.css" text="Операторы инкремента или декремента предоставляют удобный и компактный способ увеличения или уменьшения значения переменной на единицу.  Например, выражение x=x+1; может быть упрощено до вида ++x;" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="36.0" layoutY="446.0" prefHeight="83.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level1App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="58.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level1App.css" text="Оператор декремента (--)  используется для уменьшения значения переменной на единицу." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="538.0" prefHeight="190.0" prefWidth="430.0" styleClass="code" stylesheets="@css/Level1App.css" text="&#10;public class Program {&#10;    public static void main(String[] args) {&#10;        int test = 5;&#10;        --test; &#10;        &#10;        System.out.println(test);&#10;    }&#10;}" />
+                  <Label layoutX="36.0" layoutY="763.0" prefHeight="30.0" prefWidth="510.0" styleClass="h1_" stylesheets="@css/Level1App.css" text="Префикс и Постфикс" />
+                  <AnchorPane layoutX="36.0" layoutY="820.0" prefHeight="169.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level1App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="144.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level1App.css" text="Операторы инкремента и декремента могут быть использованы в двух формах, в префиксной и постфиксной. В префиксной форме, операторы находятся перед операндом, а в постфиксной форме операторы находятся после операнда. Ниже представлено разъяснение, как работают обе формы:  Префикс: Инкрементирует значение переменной и использует новое значение в выражении." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="999.0" prefHeight="190.0" prefWidth="430.0" styleClass="code" stylesheets="@css/Level1App.css" text="&#10;public class Program {&#10;    public static void main(String[] args) {&#10;        int x = 34;&#10;        int y = ++x;&#10;&#10;        System.out.println(y);&#10;    }&#10;}" />
+                  <AnchorPane layoutX="36.0" layoutY="1197.0" prefHeight="140.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level1App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="112.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level1App.css" text="Значение x сначала инкрементируется до 35, и только затем присваивается переменной y, так что теперь значения переменных x и y равны 35.  Постфикс: Значение переменной сначала используется в выражении и только затем увеличивается." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="1346.0" prefHeight="190.0" prefWidth="430.0" styleClass="code" stylesheets="@css/Level1App.css" text="&#10;public class Program {&#10;    public static void main(String[] args) {&#10;        int x = 34;&#10;        int y = x++;&#10;&#10;        System.out.println(y);&#10;    }&#10;}" />
+                  <AnchorPane layoutX="36.0" layoutY="1545.0" prefHeight="103.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level1App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="75.0" prefWidth="544.0" styleClass="h2_" stylesheets="@css/Level1App.css" text="Значение x сначала присваивается переменной y, и затем инкрементируется на единицу. Следовательно, x становится равным 35, а переменной y присвоено значение 34." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="36.0" layoutY="1681.0" prefHeight="30.0" prefWidth="510.0" styleClass="h1_" stylesheets="@css/Level1App.css" text="Операторы Присваивания" />
+                  <AnchorPane layoutX="36.0" layoutY="1738.0" prefHeight="80.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level1App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="57.0" prefWidth="544.0" styleClass="h2_" stylesheets="@css/Level1App.css" text="Вы уже знакомы с оператором присваивания (=), который присваивает значение к переменной." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="1827.0" prefHeight="63.0" prefWidth="430.0" styleClass="code" stylesheets="@css/Level1App.css" text="&#10;int value = 5;" />
+                  <AnchorPane layoutX="36.0" layoutY="1900.0" prefHeight="113.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level1App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="89.0" prefWidth="544.0" styleClass="h2_" stylesheets="@css/Level1App.css" text="Это выражение присваивает значение 5 к переменной value типа int.  Java имеет множество операторов присваивания, чтобы было легче писать код." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="2024.0" prefHeight="196.0" prefWidth="500.0" styleClass="code" stylesheets="@css/Level1App.css" text="&#10;public class Program {&#10;    public static void main(String[] args) {&#10;        int num1 = 4;&#10;        int num2 = 8;&#10;        num2 += num1;&#10;        &#10;        System.out.println(num2);&#10;    }&#10;}" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <ScrollPane fx:id="sp8" layoutX="263.0" prefHeight="724.0" prefWidth="680.0" visible="false">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="788.0" prefWidth="662.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="36.0" layoutY="45.0" prefHeight="30.0" prefWidth="510.0" styleClass="h1_" stylesheets="@css/Level1App.css" text="Строки" />
+                  <TextArea editable="false" layoutX="35.0" layoutY="223.0" prefHeight="64.0" prefWidth="430.0" styleClass="code" stylesheets="@css/Level1App.css" text="&#10;String s = &quot;Hello&quot;;" />
+                  <AnchorPane layoutX="36.0" layoutY="103.0" prefHeight="109.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level1App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="77.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level1App.css" text="String это объект, который представляет собой последовательность символов. Например, &quot;Hello&quot; это строка из 5 символов." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="39.0" layoutY="320.0" prefHeight="30.0" prefWidth="510.0" styleClass="h1_" stylesheets="@css/Level1App.css" text="Конкатенация Строк" />
+                  <AnchorPane layoutX="36.0" layoutY="379.0" prefHeight="129.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level1App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="101.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level1App.css" text="Оператор + (плюс) между строками складывает их вместе, образуя новую строку. Этот процесс называется конкатенацией. В результате получится строка, состоящая из первой и второй строк." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="520.0" prefHeight="213.0" prefWidth="593.0" styleClass="code" stylesheets="@css/Level1App.css" text="&#10;public class Program {&#10;    public static void main(String[] args) {&#10;        String firstName, lastName;&#10;        firstName = &quot;David&quot;;&#10;        lastName = &quot;Williams&quot;;&#10;        &#10;        System.out.println(&quot;My name is &quot; + firstName +&quot; &quot;+lastName);&#10;    }&#10;}" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <ScrollPane fx:id="sp9" layoutX="263.0" prefHeight="730.0" prefWidth="680.0" visible="false">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1046.0" prefWidth="662.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="36.0" layoutY="45.0" prefHeight="30.0" prefWidth="510.0" styleClass="h1_" stylesheets="@css/Level1App.css" text="Тест" />
+                  <AnchorPane layoutX="36.0" layoutY="103.0" prefHeight="142.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level1App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="121.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level1App.css" text="Для получения следующего уровня, необходимо пройти тест, состоящий из разных вопросов и способов ответа на них. " wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="36.0" layoutY="260.0" prefHeight="36.0" prefWidth="499.0" style="-fx-background-color: #fed15a;" styleClass="subblock" stylesheets="@css/Level1App.css">
+                     <children>
+                        <Label layoutX="18.0" layoutY="5.0" prefHeight="40.0" prefWidth="463.0" styleClass="h3_" stylesheets="@css/Level1App.css" text="После прохождения этого теста вы получите 2й уровень" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="35.0" layoutY="320.0" prefHeight="242.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level1App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="61.0" prefWidth="551.0" styleClass="h2_" stylesheets="@css/Level1App.css" text="Пожалуйста, введите код, чтобы объявить две переменные типа int и вывести их сумму, используя переменную sum." wrapText="true" />
+                        <Label layoutX="26.0" layoutY="90.0" styleClass="code_text" stylesheets="@css/Level1App.css" text="int x = 4" />
+                        <TextField fx:id="tf1" alignment="TOP_LEFT" layoutX="18.0" layoutY="111.0" prefHeight="28.0" prefWidth="46.0" promptText="___" styleClass="code_text" />
+                        <Label layoutX="59.0" layoutY="116.0" styleClass="code_text" stylesheets="@css/Level1App.css" text=" y = 7;" />
+                        <Label layoutX="26.0" layoutY="142.0" styleClass="code_text" stylesheets="@css/Level1App.css" text="int sum = x" />
+                        <TextField fx:id="tf2" alignment="CENTER" layoutX="123.0" layoutY="138.0" prefHeight="28.0" prefWidth="30.0" promptText="_" styleClass="code_text" />
+                        <Label layoutX="150.0" layoutY="142.0" styleClass="code_text" stylesheets="@css/Level1App.css" text=" y;" />
+                        <Label layoutX="26.0" layoutY="165.0" styleClass="code_text" stylesheets="@css/Level1App.css" text="System.out.println(" />
+                        <TextField fx:id="tf3" alignment="CENTER" layoutX="185.0" layoutY="160.0" prefHeight="28.0" prefWidth="50.0" promptText="___" styleClass="code_text" />
+                        <Label layoutX="235.0" layoutY="165.0" styleClass="code_text" stylesheets="@css/Level1App.css" text=");" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="36.0" layoutY="574.0" prefHeight="173.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level1App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="32.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level1App.css" text="В каждой программе Java..." wrapText="true" />
+                        <RadioButton fx:id="rb1" layoutX="26.0" layoutY="62.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="502.0" styleClass="code_text" text="...должно быть объявлено по меньшей мере две переменные." wrapText="true" />
+                        <RadioButton fx:id="rb2" layoutX="26.0" layoutY="90.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="502.0" styleClass="code_text" text="...все переменные должны быть целочисленного типа." wrapText="true" />
+                        <RadioButton fx:id="rb3" layoutX="26.0" layoutY="118.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="502.0" styleClass="code_text" text="...должен быть объявлен метод &quot;main&quot;." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="38.0" layoutY="757.0" prefHeight="196.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level1App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="31.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level1App.css" text="Введите код, чтобы вывести имя (name):" wrapText="true" />
+                        <TextField fx:id="tf4" alignment="TOP_LEFT" layoutX="17.0" layoutY="56.0" prefHeight="28.0" prefWidth="78.0" promptText="_____" styleClass="code_text" />
+                        <Label layoutX="96.0" layoutY="60.0" styleClass="code_text" stylesheets="@css/Level1App.css" text="name;" />
+                        <Label layoutX="26.0" layoutY="86.0" styleClass="code_text" stylesheets="@css/Level1App.css" text="name = &quot;David&quot;;" />
+                        <TextField fx:id="tf5" layoutX="16.0" layoutY="102.0" prefHeight="28.0" prefWidth="71.0" promptText="______" styleClass="code_text" />
+                        <Label layoutX="81.0" layoutY="107.0" styleClass="code_text" stylesheets="@css/Level1App.css" text=".out.println(name);" />
+                     </children>
+                  </AnchorPane>
+                  <Button layoutX="36.0" layoutY="978.0" mnemonicParsing="false" onAction="#checkLevel1Test" styleClass="check_button" stylesheets="@css/Level1App.css" text="Проверить" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

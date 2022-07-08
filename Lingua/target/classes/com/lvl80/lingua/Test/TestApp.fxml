@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="728.0" prefWidth="915.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lvl80.lingua.Test.TestAppController">
+   <children>
+      <AnchorPane layoutX="-2.0" minHeight="0.0" minWidth="0.0" prefHeight="728.0" prefWidth="921.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="166.0" layoutY="77.0" styleClass="h1_" stylesheets="@css/TestApp.css" text="Контрольный тест" />
+            <AnchorPane layoutX="166.0" layoutY="144.0" prefHeight="158.0" prefWidth="590.0" styleClass="block" stylesheets="@css/TestApp.css">
+               <children>
+                  <Label layoutX="26.0" layoutY="14.0" prefHeight="128.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/TestApp.css" text="Настало время проверить уровень ваших практических навыков в Java. Пройдите наш тест и узнайте, насколько хорошо вы владеете этим популярным языком программирования. В конце теста, вы получите оценку, которая будет отображаться в профиле. Удачи!" wrapText="true" />
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="311.0" fitWidth="590.0" layoutX="166.0" layoutY="316.0">
+               <image>
+                  <Image url="@images/photo_2020-03-10-12.17.30.jpeg" />
+               </image>
+            </ImageView>
+            <Button layoutX="408.0" layoutY="658.0" mnemonicParsing="false" onAction="#showTest1" style="-fx-background-color: #fed15a;" text="Пройти тест" textFill="#000001">
+               <font>
+                  <Font name="Arial Black" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <!--Here-->
+            <AnchorPane fx:id="ap1" minHeight="0.0" minWidth="0.0" prefHeight="728.0" prefWidth="921.0" style="-fx-background-color: white;" visible="false">
+               <children>
+                  <Label layoutX="166.0" layoutY="77.0" styleClass="h1_" stylesheets="@css/TestApp.css" text="Вопрос №1" />
+                  <AnchorPane layoutX="166.0" layoutY="144.0" prefHeight="158.0" prefWidth="590.0" styleClass="block" stylesheets="@css/TestApp.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="128.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/TestApp.css" text="Как называется код между фигурными скобками?" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <RadioButton layoutX="166.0" layoutY="351.0" mnemonicParsing="false" styleClass="code_text" stylesheets="@css/TestApp.css" text="Функция">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="testg1testg1" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton layoutX="166.0" layoutY="387.0" mnemonicParsing="false" styleClass="code_text" stylesheets="@css/TestApp.css" text="Секция" toggleGroup="$testg1testg1" />
+                  <RadioButton layoutX="166.0" layoutY="422.0" mnemonicParsing="false" styleClass="code_text" stylesheets="@css/TestApp.css" text="Тело" toggleGroup="$testg1testg1" />
+                  <RadioButton fx:id="rb1" layoutX="166.0" layoutY="458.0" mnemonicParsing="false" styleClass="code_text" stylesheets="@css/TestApp.css" text="Блок" toggleGroup="$testg1testg1" />
+                  <Button layoutX="402.0" layoutY="594.0" mnemonicParsing="false" onAction="#checkTest1" style="-fx-background-color: #fed15a;" styleClass="check_button_2" stylesheets="@css/TestApp.css" text="Проверить" textFill="#000001">
+                     <font>
+                        <Font name="Arial Black" size="13.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="ap2" minHeight="0.0" minWidth="0.0" prefHeight="728.0" prefWidth="921.0" style="-fx-background-color: white;" visible="false">
+               <children>
+                  <Label layoutX="166.0" layoutY="77.0" styleClass="h1_" stylesheets="@css/TestApp.css" text="Вопрос №2" />
+                  <AnchorPane layoutX="166.0" layoutY="144.0" prefHeight="158.0" prefWidth="590.0" styleClass="block" stylesheets="@css/TestApp.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="128.0" prefWidth="551.0" styleClass="h2_" stylesheets="@css/TestApp.css" text="Каково значение arr[1].length в следующем массиве?   int[][] arr = { {1, 2, 3, 4, 5}, { 6, 7, 8, 9, 10} };" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <RadioButton fx:id="rb2" layoutX="166.0" layoutY="351.0" mnemonicParsing="false" styleClass="code_text" stylesheets="@css/TestApp.css" text="5">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="testg2testg2" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton layoutX="166.0" layoutY="387.0" mnemonicParsing="false" styleClass="code_text" stylesheets="@css/TestApp.css" text="10" toggleGroup="$testg2testg2" />
+                  <RadioButton layoutX="166.0" layoutY="422.0" mnemonicParsing="false" styleClass="code_text" stylesheets="@css/TestApp.css" text="1" toggleGroup="$testg2testg2" />
+                  <RadioButton layoutX="166.0" layoutY="458.0" mnemonicParsing="false" styleClass="code_text" stylesheets="@css/TestApp.css" text="2" toggleGroup="$testg2testg2" />
+                  <Button layoutX="402.0" layoutY="594.0" mnemonicParsing="false" onAction="#checkTest2" style="-fx-background-color: #fed15a;" styleClass="check_button_2" stylesheets="@css/TestApp.css" text="Проверить" textFill="#000001">
+                     <font>
+                        <Font name="Arial Black" size="13.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="ap3" minHeight="0.0" minWidth="0.0" prefHeight="728.0" prefWidth="921.0" style="-fx-background-color: white;" visible="false">
+               <children>
+                  <Label layoutX="166.0" layoutY="77.0" styleClass="h1_" stylesheets="@css/TestApp.css" text="Вопрос №3" />
+                  <AnchorPane layoutX="166.0" layoutY="144.0" prefHeight="158.0" prefWidth="590.0" styleClass="block" stylesheets="@css/TestApp.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="128.0" prefWidth="551.0" styleClass="h2_" stylesheets="@css/TestApp.css" text="В чем разница между char и Character?" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <RadioButton fx:id="rb3" layoutX="166.0" layoutY="351.0" mnemonicParsing="false" styleClass="code_text" stylesheets="@css/TestApp.css" text="char является примитивным типом, а Character классом.">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="testg3testg3" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton layoutX="166.0" layoutY="387.0" mnemonicParsing="false" styleClass="code_text" stylesheets="@css/TestApp.css" text="нет разницы, они оба примитивные типы." toggleGroup="$testg3testg3" />
+                  <RadioButton layoutX="166.0" layoutY="422.0" mnemonicParsing="false" styleClass="code_text" stylesheets="@css/TestApp.css" text="char является классом, а Character примитивным типом." toggleGroup="$testg3testg3" />
+                  <RadioButton layoutX="166.0" layoutY="458.0" mnemonicParsing="false" styleClass="code_text" stylesheets="@css/TestApp.css" text="нет разницы, они оба классы." toggleGroup="$testg3testg3" />
+                  <Button layoutX="402.0" layoutY="594.0" mnemonicParsing="false" onAction="#checkTest3" style="-fx-background-color: #fed15a;" styleClass="check_button_2" stylesheets="@css/TestApp.css" text="Проверить" textFill="#000001">
+                     <font>
+                        <Font name="Arial Black" size="13.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="ap4" minHeight="0.0" minWidth="0.0" prefHeight="728.0" prefWidth="921.0" style="-fx-background-color: white;" visible="false">
+               <children>
+                  <Label layoutX="166.0" layoutY="77.0" styleClass="h1_" stylesheets="@css/TestApp.css" text="Вопрос №4" />
+                  <AnchorPane layoutX="166.0" layoutY="144.0" prefHeight="158.0" prefWidth="590.0" styleClass="block" stylesheets="@css/TestApp.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="128.0" prefWidth="551.0" styleClass="h2_" stylesheets="@css/TestApp.css" text="Какие из этих операторов можно использовать для объединения двух или более объектов String?" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <RadioButton fx:id="rb4" layoutX="166.0" layoutY="351.0" mnemonicParsing="false" styleClass="code_text" stylesheets="@css/TestApp.css" text="+">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="testg4testg4" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton layoutX="166.0" layoutY="387.0" mnemonicParsing="false" styleClass="code_text" stylesheets="@css/TestApp.css" text="*=" toggleGroup="$testg4testg4" />
+                  <RadioButton layoutX="166.0" layoutY="422.0" mnemonicParsing="false" styleClass="code_text" stylesheets="@css/TestApp.css" text="+=" toggleGroup="$testg4testg4" />
+                  <RadioButton layoutX="166.0" layoutY="458.0" mnemonicParsing="false" styleClass="code_text" stylesheets="@css/TestApp.css" text="*" toggleGroup="$testg4testg4" />
+                  <Button layoutX="402.0" layoutY="594.0" mnemonicParsing="false" onAction="#checkTest4" style="-fx-background-color: #fed15a;" styleClass="check_button_2" stylesheets="@css/TestApp.css" text="Проверить" textFill="#000001">
+                     <font>
+                        <Font name="Arial Black" size="13.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="ap5" minHeight="0.0" minWidth="0.0" prefHeight="728.0" prefWidth="921.0" style="-fx-background-color: white;" visible="false">
+               <children>
+                  <Label layoutX="166.0" layoutY="77.0" styleClass="h1_" stylesheets="@css/TestApp.css" text="Вопрос №5" />
+                  <AnchorPane layoutX="166.0" layoutY="144.0" prefHeight="158.0" prefWidth="590.0" styleClass="block" stylesheets="@css/TestApp.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="128.0" prefWidth="551.0" styleClass="h2_" stylesheets="@css/TestApp.css" text="От какого класса наследуют все классы Java?" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <RadioButton layoutX="166.0" layoutY="351.0" mnemonicParsing="false" styleClass="code_text" stylesheets="@css/TestApp.css" text="Collection">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="testg5testg5" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton layoutX="166.0" layoutY="387.0" mnemonicParsing="false" styleClass="code_text" stylesheets="@css/TestApp.css" text="List" toggleGroup="$testg5testg5" />
+                  <RadioButton fx:id="rb5" layoutX="166.0" layoutY="422.0" mnemonicParsing="false" styleClass="code_text" stylesheets="@css/TestApp.css" text="Object" toggleGroup="$testg5testg5" />
+                  <RadioButton layoutX="166.0" layoutY="458.0" mnemonicParsing="false" styleClass="code_text" stylesheets="@css/TestApp.css" text="Runtime" toggleGroup="$testg5testg5" />
+                  <Button layoutX="402.0" layoutY="594.0" mnemonicParsing="false" onAction="#checkTest5" style="-fx-background-color: #fed15a;" styleClass="check_button_2" stylesheets="@css/TestApp.css" text="Проверить" textFill="#000001">
+                     <font>
+                        <Font name="Arial Black" size="13.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="ap6" minHeight="0.0" minWidth="0.0" prefHeight="728.0" prefWidth="921.0" style="-fx-background-color: white;" visible="false">
+               <children>
+                  <Label layoutX="166.0" layoutY="77.0" styleClass="h1_" stylesheets="@css/TestApp.css" text="Вопрос №6" />
+                  <AnchorPane layoutX="166.0" layoutY="144.0" prefHeight="59.0" prefWidth="590.0" styleClass="block" stylesheets="@css/TestApp.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="34.0" prefWidth="551.0" styleClass="h2_" stylesheets="@css/TestApp.css" text="Какой результат выведет следующая программа?" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="166.0" layoutY="213.0" prefHeight="182.0" prefWidth="590.0" styleClass="code" stylesheets="@css/TestApp.css" text="&#10;public class Main&#10;{&#10;    public static void main(String args[]) &#10;    {&#10;        float num = 5.0f;&#10;        System.out.println(&quot;A is equal to &quot; + num/0.0f);&#10;    }&#10;}" />
+                  <RadioButton fx:id="rb6" layoutX="166.0" layoutY="406.0" mnemonicParsing="false" styleClass="code_text" stylesheets="@css/TestApp.css" text="A is equal to Infinity">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="testg6testg6" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton layoutX="166.0" layoutY="442.0" mnemonicParsing="false" styleClass="code_text" stylesheets="@css/TestApp.css" text="Ошибку при выполнении" toggleGroup="$testg6testg6" />
+                  <RadioButton layoutX="166.0" layoutY="477.0" mnemonicParsing="false" styleClass="code_text" stylesheets="@css/TestApp.css" text="Ошибку компиляции" toggleGroup="$testg6testg6" />
+                  <RadioButton layoutX="166.0" layoutY="513.0" mnemonicParsing="false" styleClass="code_text" stylesheets="@css/TestApp.css" text="A is equal to NaN" toggleGroup="$testg6testg6" />
+                  <Button layoutX="402.0" layoutY="594.0" mnemonicParsing="false" onAction="#checkTest6" style="-fx-background-color: #fed15a;" styleClass="check_button_2" stylesheets="@css/TestApp.css" text="Проверить" textFill="#000001">
+                     <font>
+                        <Font name="Arial Black" size="13.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="ap7" minHeight="0.0" minWidth="0.0" prefHeight="728.0" prefWidth="921.0" style="-fx-background-color: white;" visible="false">
+               <children>
+                  <Label layoutX="166.0" layoutY="77.0" styleClass="h1_" stylesheets="@css/TestApp.css" text="Вопрос №7" />
+                  <AnchorPane layoutX="166.0" layoutY="144.0" prefHeight="59.0" prefWidth="590.0" styleClass="block" stylesheets="@css/TestApp.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="34.0" prefWidth="551.0" styleClass="h2_" stylesheets="@css/TestApp.css" text="Какой результат выведет следующая программа?" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="166.0" layoutY="213.0" prefHeight="255.0" prefWidth="590.0" styleClass="code" stylesheets="@css/TestApp.css" text="&#10;public class Main&#10;{&#10;    public static void main (String[] args) &#10;    {&#10;        int arr1[] = {1, 2, 3, 4, 5};&#10;        int arr2[] = {1, 2, 3, 4, 5};&#10;        if (arr1 == arr2)&#10;            System.out.println(&quot;Equal&quot;);&#10;        else&#10;            System.out.println(&quot;Not equal&quot;);&#10;    }&#10;}" />
+                  <RadioButton fx:id="rb7" layoutX="166.0" layoutY="477.0" mnemonicParsing="false" styleClass="code_text" stylesheets="@css/TestApp.css" text="Not equal">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="testg7testg7" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton layoutX="166.0" layoutY="513.0" mnemonicParsing="false" styleClass="code_text" stylesheets="@css/TestApp.css" text="Equal" toggleGroup="$testg7testg7" />
+                  <Button layoutX="402.0" layoutY="594.0" mnemonicParsing="false" onAction="#checkTest7" style="-fx-background-color: #fed15a;" styleClass="check_button_2" stylesheets="@css/TestApp.css" text="Проверить" textFill="#000001">
+                     <font>
+                        <Font name="Arial Black" size="13.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="ap8" minHeight="0.0" minWidth="0.0" prefHeight="728.0" prefWidth="921.0" style="-fx-background-color: white;" visible="false">
+               <children>
+                  <Label layoutX="166.0" layoutY="77.0" styleClass="h1_" stylesheets="@css/TestApp.css" text="Вопрос №8" />
+                  <AnchorPane layoutX="166.0" layoutY="144.0" prefHeight="59.0" prefWidth="590.0" styleClass="block" stylesheets="@css/TestApp.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="34.0" prefWidth="551.0" styleClass="h2_" stylesheets="@css/TestApp.css" text="Какой результат выведет следующая программа?" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="166.0" layoutY="213.0" prefHeight="255.0" prefWidth="590.0" styleClass="code" stylesheets="@css/TestApp.css" text="&#10;public class Main &#10;{ &#10;    public static void main(String[] args) &#10;    { &#10;        System.out.print(&quot;Hello&quot;);&#10;        while(1)&#10;        {&#10;            System.out.print(&quot; world&quot;);&#10;            break;&#10;        }&#10;    } &#10;}" />
+                  <RadioButton layoutX="166.0" layoutY="477.0" mnemonicParsing="false" styleClass="code_text" stylesheets="@css/TestApp.css" text="Программа уйдет в бесконечный цикл">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="testg8testg8" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton fx:id="rb8" layoutX="166.0" layoutY="513.0" mnemonicParsing="false" styleClass="code_text" stylesheets="@css/TestApp.css" text="Программа не скомпилируется" toggleGroup="$testg8testg8" />
+                  <Button layoutX="402.0" layoutY="594.0" mnemonicParsing="false" onAction="#checkTest8" style="-fx-background-color: #fed15a;" styleClass="check_button_2" stylesheets="@css/TestApp.css" text="Проверить" textFill="#000001">
+                     <font>
+                        <Font name="Arial Black" size="13.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="ap9" minHeight="0.0" minWidth="0.0" prefHeight="728.0" prefWidth="921.0" style="-fx-background-color: white;" visible="false">
+               <children>
+                  <Label layoutX="166.0" layoutY="77.0" styleClass="h1_" stylesheets="@css/TestApp.css" text="Вопрос №9" />
+                  <AnchorPane layoutX="166.0" layoutY="144.0" prefHeight="59.0" prefWidth="590.0" styleClass="block" stylesheets="@css/TestApp.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="34.0" prefWidth="551.0" styleClass="h2_" stylesheets="@css/TestApp.css" text="Какой результат выведет следующая программа?" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="166.0" layoutY="213.0" prefHeight="255.0" prefWidth="590.0" styleClass="code" stylesheets="@css/TestApp.css" text="&#10;public class Main&#10;{&#10;    public static void main (String[] args) &#10;    {&#10;        String str1 = &quot;Hello&quot;;&#10;        String str2 = &quot;Hello&quot;;&#10;        if (str1 == str2)&#10;            System.out.println(&quot;Equal&quot;);&#10;        else&#10;            System.out.println(&quot;Not equal&quot;);&#10;    }&#10;}" />
+                  <RadioButton layoutX="166.0" layoutY="477.0" mnemonicParsing="false" styleClass="code_text" stylesheets="@css/TestApp.css" text="Not equal">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="testg9testg9" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton fx:id="rb9" layoutX="166.0" layoutY="513.0" mnemonicParsing="false" styleClass="code_text" stylesheets="@css/TestApp.css" text="Equal" toggleGroup="$testg9testg9" />
+                  <Button layoutX="402.0" layoutY="594.0" mnemonicParsing="false" onAction="#checkTest9" style="-fx-background-color: #fed15a;" styleClass="check_button_2" stylesheets="@css/TestApp.css" text="Проверить" textFill="#000001">
+                     <font>
+                        <Font name="Arial Black" size="13.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="ap10" minHeight="0.0" minWidth="0.0" prefHeight="728.0" prefWidth="921.0" style="-fx-background-color: white;" visible="false">
+               <children>
+                  <Label layoutX="166.0" layoutY="77.0" styleClass="h1_" stylesheets="@css/TestApp.css" text="Вопрос №10" />
+                  <AnchorPane layoutX="166.0" layoutY="144.0" prefHeight="59.0" prefWidth="590.0" styleClass="block" stylesheets="@css/TestApp.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="34.0" prefWidth="551.0" styleClass="h2_" stylesheets="@css/TestApp.css" text="Какой результат выведет следующая программа?" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="166.0" layoutY="213.0" prefHeight="176.0" prefWidth="590.0" styleClass="code" stylesheets="@css/TestApp.css" text="&#10;public class Main {&#10;    void print(String str) {&#10;        System.out.println(str);&#10;    }&#10;    public static void main (String[] args) {&#10;        print(&quot;Hello&quot;);&#10;    }&#10;}" />
+                  <RadioButton layoutX="166.0" layoutY="477.0" mnemonicParsing="false" styleClass="code_text" stylesheets="@css/TestApp.css" text="Ошибку при выполнении">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="testg10testg10" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton layoutX="166.0" layoutY="513.0" mnemonicParsing="false" styleClass="code_text" stylesheets="@css/TestApp.css" text="Hello" toggleGroup="$testg10testg10" />
+                  <RadioButton fx:id="rb10" layoutX="166.0" layoutY="441.0" mnemonicParsing="false" styleClass="code_text" stylesheets="@css/TestApp.css" text="Ошибку компиляции" toggleGroup="$testg10testg10">
+                  </RadioButton>
+                  <RadioButton layoutX="166.0" layoutY="404.0" mnemonicParsing="false" styleClass="code_text" stylesheets="@css/TestApp.css" text="null" toggleGroup="$testg10testg10">
+                  </RadioButton>
+                  <Button layoutX="402.0" layoutY="594.0" mnemonicParsing="false" onAction="#checkTest10" style="-fx-background-color: #fed15a;" styleClass="check_button_2" stylesheets="@css/TestApp.css" text="Проверить" textFill="#000001">
+                     <font>
+                        <Font name="Arial Black" size="13.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="ap11" minHeight="0.0" minWidth="0.0" prefHeight="728.0" prefWidth="921.0" style="-fx-background-color: white;" visible="false">
+               <children>
+                  <Label layoutX="166.0" layoutY="77.0" styleClass="h1_" stylesheets="@css/TestApp.css" text="Вопрос №11" />
+                  <AnchorPane layoutX="166.0" layoutY="144.0" prefHeight="59.0" prefWidth="590.0" styleClass="block" stylesheets="@css/TestApp.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="34.0" prefWidth="551.0" styleClass="h2_" stylesheets="@css/TestApp.css" text="Какой результат выведет следующая программа?" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="166.0" layoutY="213.0" prefHeight="176.0" prefWidth="590.0" styleClass="code" stylesheets="@css/TestApp.css" text="&#10;public class Main {&#10;    public static void main(String[] args) {&#10;        int num = 0;&#10;        for (int i = 0; i &lt; 100; i++)&#10;            num = num++;&#10;        System.out.println(num);&#10;    }&#10;}" />
+                  <RadioButton layoutX="166.0" layoutY="477.0" mnemonicParsing="false" styleClass="code_text" stylesheets="@css/TestApp.css" text="100">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="testg11testg11" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton layoutX="166.0" layoutY="513.0" mnemonicParsing="false" styleClass="code_text" stylesheets="@css/TestApp.css" text="Ошибку компиляции" toggleGroup="$testg11testg11" />
+                  <RadioButton layoutX="166.0" layoutY="441.0" mnemonicParsing="false" styleClass="code_text" stylesheets="@css/TestApp.css" text="200" toggleGroup="$testg11testg11">
+                  </RadioButton>
+                  <RadioButton fx:id="rb11" layoutX="166.0" layoutY="404.0" mnemonicParsing="false" styleClass="code_text" stylesheets="@css/TestApp.css" text="0" toggleGroup="$testg11testg11">
+                  </RadioButton>
+                  <Button layoutX="402.0" layoutY="594.0" mnemonicParsing="false" onAction="#checkTest11" style="-fx-background-color: #fed15a;" styleClass="check_button_2" stylesheets="@css/TestApp.css" text="Проверить" textFill="#000001">
+                     <font>
+                        <Font name="Arial Black" size="13.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="ap12" minHeight="0.0" minWidth="0.0" prefHeight="728.0" prefWidth="921.0" style="-fx-background-color: white;" visible="false">
+               <children>
+                  <Label layoutX="166.0" layoutY="77.0" styleClass="h1_" stylesheets="@css/TestApp.css" text="Вопрос №12" />
+                  <AnchorPane layoutX="166.0" layoutY="144.0" prefHeight="59.0" prefWidth="590.0" styleClass="block" stylesheets="@css/TestApp.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="34.0" prefWidth="551.0" styleClass="h2_" stylesheets="@css/TestApp.css" text="Какой результат выведет следующая программа?" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="166.0" layoutY="213.0" prefHeight="176.0" prefWidth="590.0" styleClass="code" stylesheets="@css/TestApp.css" text="&#10;public class Main{&#10;    public static void main(String[] arr){&#10;        System.out.println(&quot;Main.main(String[] arr) is called&quot;);&#10;    }&#10;    public static void main(){&#10;        System.out.println(&quot;Main.main() is called&quot;);&#10;    }&#10;}" />
+                  <RadioButton layoutX="166.0" layoutY="477.0" mnemonicParsing="false" styleClass="code_text" stylesheets="@css/TestApp.css" text="Ошибка компиляции">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="testg12testg12" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton layoutX="166.0" layoutY="513.0" mnemonicParsing="false" styleClass="code_text" stylesheets="@css/TestApp.css" text="Main.main() is called" toggleGroup="$testg12testg12" />
+                  <RadioButton fx:id="rb12" layoutX="166.0" layoutY="441.0" mnemonicParsing="false" styleClass="code_text" stylesheets="@css/TestApp.css" text="Main.main(String[] arr) is called" toggleGroup="$testg12testg12">
+                  </RadioButton>
+                  <RadioButton layoutX="166.0" layoutY="404.0" mnemonicParsing="false" styleClass="code_text" stylesheets="@css/TestApp.css" text="Ошибка при выполнении" toggleGroup="$testg12testg12">
+                  </RadioButton>
+                  <Button layoutX="402.0" layoutY="594.0" mnemonicParsing="false" onAction="#checkTest12" style="-fx-background-color: #fed15a;" styleClass="check_button_2" stylesheets="@css/TestApp.css" text="Проверить" textFill="#000001">
+                     <font>
+                        <Font name="Arial Black" size="13.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="ap13" minHeight="0.0" minWidth="0.0" prefHeight="728.0" prefWidth="921.0" style="-fx-background-color: white;" visible="false">
+               <children>
+                  <Label layoutX="166.0" layoutY="77.0" styleClass="h1_" stylesheets="@css/TestApp.css" text="Вопрос №13" />
+                  <AnchorPane layoutX="166.0" layoutY="144.0" prefHeight="59.0" prefWidth="590.0" styleClass="block" stylesheets="@css/TestApp.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="34.0" prefWidth="551.0" styleClass="h2_" stylesheets="@css/TestApp.css" text="Какой результат выведет следующая программа?" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="166.0" layoutY="213.0" prefHeight="176.0" prefWidth="590.0" styleClass="code" stylesheets="@css/TestApp.css" text="public class Main{&#10;    public static void main (String[] args) {&#10;        float real = 0.0f/0.0f;&#10;        if (real == real)&#10;            System.out.println(&quot;Equal&quot;);&#10;        else&#10;            System.out.println(&quot;Not equal&quot;);&#10;    }&#10;}" />
+                  <RadioButton layoutX="166.0" layoutY="477.0" mnemonicParsing="false" styleClass="code_text" stylesheets="@css/TestApp.css" text="Ошибку компиляции">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="testg13testg13" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton layoutX="166.0" layoutY="513.0" mnemonicParsing="false" styleClass="code_text" stylesheets="@css/TestApp.css" text="Equal" toggleGroup="$testg13testg13" />
+                  <RadioButton layoutX="166.0" layoutY="441.0" mnemonicParsing="false" styleClass="code_text" stylesheets="@css/TestApp.css" text="Ошибку при выполнении" toggleGroup="$testg13testg13">
+                  </RadioButton>
+                  <RadioButton fx:id="rb13" layoutX="166.0" layoutY="404.0" mnemonicParsing="false" styleClass="code_text" stylesheets="@css/TestApp.css" text="Not equal" toggleGroup="$testg13testg13">
+                  </RadioButton>
+                  <Button layoutX="402.0" layoutY="594.0" mnemonicParsing="false" onAction="#checkTest13" style="-fx-background-color: #fed15a;" styleClass="check_button_2" stylesheets="@css/TestApp.css" text="Проверить" textFill="#000001">
+                     <font>
+                        <Font name="Arial Black" size="13.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="ap14" minHeight="0.0" minWidth="0.0" prefHeight="728.0" prefWidth="921.0" style="-fx-background-color: white;" visible="false">
+               <children>
+                  <Label layoutX="166.0" layoutY="77.0" styleClass="h1_" stylesheets="@css/TestApp.css" text="Вопрос №14" />
+                  <AnchorPane layoutX="166.0" layoutY="144.0" prefHeight="59.0" prefWidth="590.0" styleClass="block" stylesheets="@css/TestApp.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="34.0" prefWidth="551.0" styleClass="h2_" stylesheets="@css/TestApp.css" text="Какой результат выведет следующая программа?" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="166.0" layoutY="213.0" prefHeight="176.0" prefWidth="590.0" styleClass="code" stylesheets="@css/TestApp.css" text="&#10;public class Main {&#10;    public static void main(String args[]) {&#10;        byte num = (byte)127;&#10;        num++;&#10;        System.out.println(num);&#10;    } &#10;}" />
+                  <RadioButton layoutX="166.0" layoutY="477.0" mnemonicParsing="false" styleClass="code_text" stylesheets="@css/TestApp.css" text="128">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="testg14testg14" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton layoutX="166.0" layoutY="513.0" mnemonicParsing="false" styleClass="code_text" stylesheets="@css/TestApp.css" text="Ошибку компиляции" toggleGroup="$testg14testg14" />
+                  <RadioButton fx:id="rb14" layoutX="166.0" layoutY="441.0" mnemonicParsing="false" styleClass="code_text" stylesheets="@css/TestApp.css" text="-128" toggleGroup="$testg14testg14">
+                  </RadioButton>
+                  <RadioButton layoutX="166.0" layoutY="404.0" mnemonicParsing="false" styleClass="code_text" stylesheets="@css/TestApp.css" text="0" toggleGroup="$testg14testg14">
+                  </RadioButton>
+                  <Button layoutX="402.0" layoutY="594.0" mnemonicParsing="false" onAction="#checkTest14" style="-fx-background-color: #fed15a;" styleClass="check_button_2" stylesheets="@css/TestApp.css" text="Проверить" textFill="#000001">
+                     <font>
+                        <Font name="Arial Black" size="13.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="ap15" minHeight="0.0" minWidth="0.0" prefHeight="728.0" prefWidth="921.0" style="-fx-background-color: white;" visible="false">
+               <children>
+                  <Label layoutX="166.0" layoutY="77.0" styleClass="h1_" stylesheets="@css/TestApp.css" text="Вопрос №15" />
+                  <AnchorPane layoutX="166.0" layoutY="144.0" prefHeight="59.0" prefWidth="590.0" styleClass="block" stylesheets="@css/TestApp.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="34.0" prefWidth="551.0" styleClass="h2_" stylesheets="@css/TestApp.css" text="Вам понравился тест?" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <RadioButton fx:id="rb15" layoutX="166.0" layoutY="488.0" mnemonicParsing="false" styleClass="code_text" stylesheets="@css/TestApp.css" text="Да" />
+                  <RadioButton fx:id="rb16" layoutX="166.0" layoutY="444.0" mnemonicParsing="false" styleClass="code_text" stylesheets="@css/TestApp.css" text="Да">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="testg15testg15" />
+                     </toggleGroup></RadioButton>
+                  <Button layoutX="359.0" layoutY="594.0" mnemonicParsing="false" onAction="#checkTest15" style="-fx-background-color: #fed15a;" styleClass="check_button_2" stylesheets="@css/TestApp.css" text="Получить результат" textFill="#000001">
+                     <font>
+                        <Font name="Arial Black" size="13.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <RadioButton fx:id="rb17" layoutX="166.0" layoutY="399.0" mnemonicParsing="false" styleClass="code_text" stylesheets="@css/TestApp.css" text="Да" toggleGroup="$testg15testg15">
+                  </RadioButton>
+                  <RadioButton fx:id="rb18" layoutX="166.0" layoutY="357.0" mnemonicParsing="false" styleClass="code_text" stylesheets="@css/TestApp.css" text="Да" toggleGroup="$testg15testg15">
+                  </RadioButton>
+                  <RadioButton fx:id="rb19" layoutX="166.0" layoutY="315.0" mnemonicParsing="false" styleClass="code_text" stylesheets="@css/TestApp.css" text="Да" toggleGroup="$testg15testg15">
+                  </RadioButton>
+                  <RadioButton fx:id="rb20" layoutX="166.0" layoutY="273.0" mnemonicParsing="false" styleClass="code_text" stylesheets="@css/TestApp.css" text="Да" toggleGroup="$testg15testg15">
+                  </RadioButton>
+                  <RadioButton fx:id="rb21" layoutX="166.0" layoutY="231.0" mnemonicParsing="false" styleClass="code_text" stylesheets="@css/TestApp.css" text="Да" toggleGroup="$testg15testg15">
+                  </RadioButton>
+
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="ap16" minHeight="0.0" minWidth="0.0" prefHeight="728.0" prefWidth="921.0" style="-fx-background-color: white;" visible="false">
+               <children>
+                  <Label layoutX="166.0" layoutY="77.0" styleClass="h1_" stylesheets="@css/TestApp.css" text="Результаты" />
+
+                  <AnchorPane layoutX="166.0" layoutY="144.0" prefHeight="59.0" prefWidth="590.0" styleClass="block" stylesheets="@css/TestApp.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="34.0" prefWidth="551.0" styleClass="h2_" stylesheets="@css/TestApp.css" text="Вы прошли контрольный тест. Ваши результаты:" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <Label fx:id="lbl1" layoutX="166.0" layoutY="213.0" prefHeight="34.0" prefWidth="232.0" styleClass="h2_" stylesheets="@css/TestApp.css" text="Вопрос №1: " wrapText="true" />
+                  <Label fx:id="lbl2" layoutX="166.0" layoutY="240.0" prefHeight="34.0" prefWidth="232.0" styleClass="h2_" stylesheets="@css/TestApp.css" text="Вопрос №2: " wrapText="true" />
+                  <Label fx:id="lbl3" layoutX="166.0" layoutY="267.0" prefHeight="34.0" prefWidth="232.0" styleClass="h2_" stylesheets="@css/TestApp.css" text="Вопрос №3: " wrapText="true" />
+                  <Label fx:id="lbl4" layoutX="166.0" layoutY="295.0" prefHeight="34.0" prefWidth="232.0" styleClass="h2_" stylesheets="@css/TestApp.css" text="Вопрос №4: " wrapText="true" />
+                  <Label fx:id="lbl5" layoutX="166.0" layoutY="322.0" prefHeight="34.0" prefWidth="232.0" styleClass="h2_" stylesheets="@css/TestApp.css" text="Вопрос №5: " wrapText="true" />
+                  <Label fx:id="lbl6" layoutX="166.0" layoutY="349.0" prefHeight="34.0" prefWidth="232.0" styleClass="h2_" stylesheets="@css/TestApp.css" text="Вопрос №6: " wrapText="true" />
+                  <Label fx:id="lbl7" layoutX="166.0" layoutY="377.0" prefHeight="34.0" prefWidth="232.0" styleClass="h2_" stylesheets="@css/TestApp.css" text="Вопрос №7: " wrapText="true" />
+                  <Label fx:id="lbl8" layoutX="166.0" layoutY="404.0" prefHeight="34.0" prefWidth="232.0" styleClass="h2_" stylesheets="@css/TestApp.css" text="Вопрос №8: " wrapText="true" />
+                  <Label fx:id="lbl9" layoutX="166.0" layoutY="431.0" prefHeight="34.0" prefWidth="232.0" styleClass="h2_" stylesheets="@css/TestApp.css" text="Вопрос №9: " wrapText="true" />
+                  <Label fx:id="lbl10" layoutX="166.0" layoutY="459.0" prefHeight="34.0" prefWidth="232.0" styleClass="h2_" stylesheets="@css/TestApp.css" text="Вопрос №10: " wrapText="true" />
+                  <Label fx:id="lbl11" layoutX="166.0" layoutY="486.0" prefHeight="34.0" prefWidth="232.0" styleClass="h2_" stylesheets="@css/TestApp.css" text="Вопрос №11: " wrapText="true" />
+                  <Label fx:id="lbl12" layoutX="166.0" layoutY="513.0" prefHeight="34.0" prefWidth="232.0" styleClass="h2_" stylesheets="@css/TestApp.css" text="Вопрос №12: " wrapText="true" />
+                  <Label fx:id="lbl13" layoutX="166.0" layoutY="540.0" prefHeight="34.0" prefWidth="232.0" styleClass="h2_" stylesheets="@css/TestApp.css" text="Вопрос №13: " wrapText="true" />
+                  <Label fx:id="lbl14" layoutX="166.0" layoutY="567.0" prefHeight="34.0" prefWidth="232.0" styleClass="h2_" stylesheets="@css/TestApp.css" text="Вопрос №14: " wrapText="true" />
+                  <Label fx:id="lbl15" layoutX="166.0" layoutY="594.0" prefHeight="34.0" prefWidth="232.0" styleClass="h2_" stylesheets="@css/TestApp.css" text="Вопрос №15: " wrapText="true" />
+                  <Label fx:id="lbl16" layoutX="553.0" layoutY="594.0" prefHeight="34.0" prefWidth="203.0" styleClass="h2_" stylesheets="@css/TestApp.css" text="Ваша оценка: " wrapText="true" />
+
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="40.0" prefWidth="40.0" styleClass="back_button" stylesheets="@../Literature/css/LiteratureApp.css" />
+      <Label layoutX="28.0" layoutY="15.0" prefHeight="32.0" prefWidth="16.0" text="&lt;" textFill="WHITE">
+         <font>
+            <Font name="Bison Bold" size="28.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backToLobby" opacity="0.0" prefHeight="40.0" prefWidth="40.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

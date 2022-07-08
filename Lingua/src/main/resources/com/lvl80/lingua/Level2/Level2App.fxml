@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="728.0" prefWidth="915.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lvl80.lingua.Level2.Level2AppController">
+   <children>
+      <VBox prefHeight="728.0" prefWidth="263.0" style="-fx-background-color: black;">
+         <padding>
+            <Insets left="25.0" top="210.0" />
+         </padding>
+         <children>
+            <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#showSubtheme1" prefHeight="24.0" prefWidth="265.0" styleClass="theme_button" stylesheets="@css/Level2App.css" text="Условные операторы" textFill="WHITE" />
+            <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#showSubtheme2" prefHeight="24.0" prefWidth="265.0" styleClass="theme_button" stylesheets="@css/Level2App.css" text="Вложенные операторы if" textFill="WHITE" />
+            <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#showSubtheme3" prefHeight="24.0" prefWidth="265.0" styleClass="theme_button" stylesheets="@css/Level2App.css" text="Оператор else if" textFill="WHITE" />
+            <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#showSubtheme4" prefHeight="24.0" prefWidth="265.0" styleClass="theme_button" stylesheets="@css/Level2App.css" text="Логические операторы" textFill="WHITE" />
+            <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#showSubtheme5" prefHeight="21.0" prefWidth="263.0" styleClass="theme_button" stylesheets="@css/Level2App.css" text="Оператор switch" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+            <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#showSubtheme6" prefHeight="24.0" prefWidth="265.0" styleClass="theme_button" stylesheets="@css/Level2App.css" text="Цикл While" textFill="WHITE" />
+            <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#showSubtheme7" prefHeight="24.0" prefWidth="265.0" styleClass="theme_button" stylesheets="@css/Level2App.css" text="Цикл for" textFill="WHITE" />
+            <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#showSubtheme8" prefHeight="24.0" prefWidth="265.0" styleClass="theme_button" stylesheets="@css/Level2App.css" text="Цикл do while" textFill="WHITE" />
+            <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#showSubtheme9" prefHeight="24.0" prefWidth="265.0" style="-fx-background-color: #fed15a; -fx-text-fill: black;" styleClass="theme_button" stylesheets="@css/Level2App.css" text="Тест" textFill="WHITE" />
+         </children>
+      </VBox>
+      <AnchorPane layoutX="132.0" layoutY="12.0" prefHeight="22.0" prefWidth="0.0" style="-fx-background-color: white; -fx-background-radius: 30;">
+         <children>
+            <AnchorPane layoutX="-123.0" layoutY="-2.0" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: white; -fx-background-radius: 90;" styleClass="back_button" />
+            <Label layoutX="-108.0" prefHeight="32.0" prefWidth="16.0" text="&lt;" textFill="#000001">
+               <font>
+                  <Font name="Bison Bold" size="28.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Button layoutX="-122.0" layoutY="-2.0" mnemonicParsing="false" onAction="#backToLobby" opacity="0.0" prefHeight="40.0" prefWidth="40.0" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+      <ScrollPane fx:id="sp1" layoutX="261.0" layoutY="-2.0" prefHeight="739.0" prefWidth="680.0" visible="true">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1134.0" prefWidth="662.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="36.0" layoutY="45.0" styleClass="h1_" stylesheets="@css/Level2App.css" text="Условные операторы" />
+                  <AnchorPane layoutX="36.0" layoutY="122.0" prefHeight="206.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level2App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="174.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level2App.css" text="Условные операторы используются для выполнения различных действий, основанных на различных условиях.   Выражение if является одним из наиболее часто используемых выражений. Если выражение условного оператора if является истинным, то будет выполнен блок кода внутри выражения if. Если выражение окажется ложным, то будет выполнен код, находящийся сразу после конца выражения if (после закрывающей фигурной скобки)." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="337.0" prefHeight="98.0" prefWidth="402.0" styleClass="code" stylesheets="@css/Level2App.css" text="&#10;if (condition) { &#10;   //Executes when the condition is true &#10;}" />
+                  <AnchorPane layoutX="36.0" layoutY="446.0" prefHeight="120.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level2App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="91.0" prefWidth="498.0" styleClass="h2_" stylesheets="@css/Level2App.css" text="Любой из следующих операторов сравнения может быть использован для формирования условия: &lt; меньше чем &gt; больше чем != не равно == равно &lt;= меньше, либо равно  &gt;= больше, либо равно" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="577.0" prefHeight="119.0" prefWidth="402.0" styleClass="code" stylesheets="@css/Level2App.css" text="&#10;int x = 7;&#10;if(x &lt; 42) {&#10;    System.out.println(&quot;Hi&quot;);&#10;}" />
+                  <Label layoutX="36.0" layoutY="724.0" prefHeight="30.0" prefWidth="292.0" styleClass="h1_" stylesheets="@css/Level2App.css" text="Операторы if...else" />
+                  <AnchorPane layoutX="36.0" layoutY="781.0" prefHeight="99.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level2App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="71.0" prefWidth="498.0" styleClass="h2_" stylesheets="@css/Level2App.css" text="После оператора if может следовать опциональный оператор else, который выполняется, когда условие оказывается ложным." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="895.0" prefHeight="210.0" prefWidth="480.0" styleClass="code" stylesheets="@css/Level2App.css" text="&#10;public class Program {&#10;    public static void main(String[] args) {&#10;        int age = 30;&#10;        if (age &lt; 16) {&#10;            System.out.println(&quot;Too Young&quot;);&#10;        } else {&#10;            System.out.println(&quot;Welcome!&quot;);&#10;        }&#10;    }&#10;}" />
+               </children></AnchorPane>
+        </content>
+      </ScrollPane>
+      <ScrollPane fx:id="sp2" layoutX="261.0" layoutY="-1.0" prefHeight="731.0" prefWidth="680.0" visible="flase">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="735.0" prefWidth="662.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="36.0" layoutY="45.0" prefHeight="30.0" prefWidth="348.0" styleClass="h1_" stylesheets="@css/Level2App.css" text="Вложенные Операторы if" />
+                  <AnchorPane layoutX="36.0" layoutY="122.0" prefHeight="66.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level2App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="40.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level2App.css" text="Вы можете использовать один оператор if-else внутри другого оператора if или else." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="37.0" layoutY="205.0" prefHeight="296.0" prefWidth="487.0" styleClass="code" stylesheets="@css/Level2App.css" text="&#10;public class Program {&#10;    public static void main(String[] args) {&#10;        int age = 25;&#10;        if(age &gt; 0) {&#10;            if(age &gt; 16) {&#10;                System.out.println(&quot;Welcome!&quot;);&#10;            } else {&#10;                System.out.println(&quot;Too Young&quot;);&#10;            }&#10;        } else {&#10;            System.out.println(&quot;Error&quot;);&#10;        }&#10;    }&#10;}" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <ScrollPane fx:id="sp3" layoutX="261.0" layoutY="-1.0" prefHeight="730.0" prefWidth="680.0" visible="false">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="734.0" prefWidth="662.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="36.0" layoutY="45.0" prefHeight="30.0" prefWidth="348.0" styleClass="h1_" stylesheets="@css/Level2App.css" text="Оператор else if" />
+                  <AnchorPane layoutX="36.0" layoutY="122.0" prefHeight="101.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level2App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="69.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level2App.css" text="Вместо использования вложенных операторов if-else, вы можете использовать оператор else if для проверки множества условий." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="235.0" prefHeight="285.0" prefWidth="573.0" styleClass="code" stylesheets="@css/Level2App.css" text="&#10;public class Program {&#10;    public static void main(String[] args) {&#10;        int age = 25;&#10;        if(age &lt;= 0) {&#10;            System.out.println(&quot;Error&quot;);&#10;        } else if(age &lt;= 16) {&#10;            System.out.println(&quot;Too Young&quot;);&#10;        } else if(age &lt; 100) {&#10;            System.out.println(&quot;Welcome!&quot;);&#10;        } else {&#10;            System.out.println(&quot;Really?&quot;);&#10;        }&#10;    }&#10;}" />
+                  <AnchorPane layoutX="36.0" layoutY="543.0" prefHeight="88.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level2App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="54.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level2App.css" text="Код проверит условие, и если оно будет истинно, то выполнится условие внутри блока" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <ScrollPane fx:id="sp4" layoutX="263.0" layoutY="-2.0" prefHeight="734.0" prefWidth="680.0" visible="false">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1809.0" prefWidth="662.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="36.0" layoutY="45.0" prefHeight="30.0" prefWidth="348.0" styleClass="h1_" stylesheets="@css/Level2App.css" text="Логические Операторы" />
+                  <TextArea editable="false" layoutX="36.0" layoutY="289.0" prefHeight="264.0" prefWidth="522.0" styleClass="code" stylesheets="@css/Level2App.css" text="&#10;public class Program {&#10;    public static void main(String[] args) {&#10;        int age = 22;&#10;        int money = 800;&#10;        &#10;        if (age &gt; 18) {&#10;            if (money &gt; 500) {&#10;                System.out.println(&quot;Welcome!&quot;);&#10;            }&#10;        }&#10;    }&#10;}" />
+                  <AnchorPane layoutX="36.0" layoutY="103.0" prefHeight="170.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level2App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="137.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level2App.css" text="Логические операторы используются для комбинирования множества условий.  Скажем, вы хотели бы, чтобы ваша программа выводила &quot;Welcome!&quot; только когда переменная age больше 18 и переменная money больше 500.   Одним способом выполнения этого является использование вложенных операторов if:" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="36.0" layoutY="572.0" prefHeight="94.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level2App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="73.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level2App.css" text="Однако, использование логического оператора И (&amp;&amp;) является способом лучше:" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="690.0" prefHeight="221.0" prefWidth="473.0" styleClass="code" stylesheets="@css/Level2App.css" text="&#10;public class Program {&#10;    public static void main(String[] args) {&#10;        int age = 22;&#10;        int money = 800;&#10;        &#10;        if (age &gt; 18 &amp;&amp; money &gt; 500) {&#10;            System.out.println(&quot;Welcome!&quot;);&#10;        }&#10;    }&#10;}" />
+                  <Label layoutX="36.0" layoutY="946.0" prefHeight="30.0" prefWidth="348.0" styleClass="h1_" stylesheets="@css/Level2App.css" text="Оператор ИЛИ" />
+                  <AnchorPane layoutX="36.0" layoutY="1007.0" prefHeight="94.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level2App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="73.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level2App.css" text="Оператор ИЛИ (||) проверяет, истинно ли какое-нибудь из условий.  Условие будет истинным, если любой из операндов будет истинным." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="1114.0" prefHeight="221.0" prefWidth="473.0" styleClass="code" stylesheets="@css/Level2App.css" text="&#10;public class Program {&#10;    public static void main(String[] args) {&#10;        int age = 25;&#10;        int money = 100;&#10;        &#10;        if (age &gt; 18 || money &gt; 500) {&#10;            System.out.println(&quot;Welcome!&quot;);&#10;        }&#10;    }&#10;}" />
+                  <AnchorPane layoutX="36.0" layoutY="1349.0" prefHeight="146.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level2App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="121.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level2App.css" text="Вышеуказанный код выведет &quot;Welcome!&quot;, если значение переменной age больше 18 или если значение переменной money больше 500.  Логический оператор НЕ (!) используется для установки противоположного логического состояния его операнда. Если условие верно, то логический оператор НЕ сделает его ложным." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="1506.0" prefHeight="221.0" prefWidth="473.0" styleClass="code" stylesheets="@css/Level2App.css" text="&#10;public class Program {&#10;    public static void main(String[] args) {&#10;        int age = 25;&#10;        if(!(age &gt; 18)) {&#10;            System.out.println(&quot;Too Young&quot;);&#10;        } else {&#10;            System.out.println(&quot;Welcome&quot;);&#10;        }&#10;    }&#10;}" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <ScrollPane fx:id="sp5" layoutX="263.0" prefHeight="736.0" prefWidth="680.0" visible="false">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="2449.0" prefWidth="662.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="36.0" layoutY="45.0" prefHeight="30.0" prefWidth="510.0" styleClass="h1_" stylesheets="@css/Level2App.css" text="Оператор switch" />
+                  <TextArea editable="false" layoutX="36.0" layoutY="231.0" prefHeight="245.0" prefWidth="442.0" styleClass="code" stylesheets="@css/Level2App.css" text="&#10;switch (expression) { &#10;   case value1 : &#10;     //Statements &#10;     break; //optional &#10;   case value2 : &#10;     //Statements &#10;     break; //optional &#10;    //You can have any number of case statements. &#10;    default : //Optional &#10;       //Statements &#10;}" />
+                  <AnchorPane layoutX="36.0" layoutY="103.0" prefHeight="118.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level2App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="86.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level2App.css" text="Оператор switch проверяет переменную на равенство списку значений. Каждое значение называется case(случаем), и переменная оператора switch проверяется с каждым случаем." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="36.0" layoutY="493.0" prefHeight="296.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level2App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="283.0" prefWidth="537.0" styleClass="h2_" stylesheets="@css/Level2App.css" text="- Если переменная оператора switch равна case, то выражения этого case будут выполняться до достижения оператора break. - Когда достигается оператор break, оператор switch завершается, поток управления переходит на следующую строку после оператора switch. - Не каждый case должен содержать оператор break. Если не встретился оператор break, то поток управления пройдет через несколько операторов case, пока не будет достигнут оператор break.  В примере ниже проверяется переменная day на соответствие с набором значений и выводится соответствующее сообщение." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="803.0" prefHeight="323.0" prefWidth="465.0" styleClass="code" stylesheets="@css/Level2App.css" text="&#10;public class Program {&#10;    public static void main(String[] args) {&#10;        int day = 3;&#10;        switch(day) {&#10;            case 1:&#10;                System.out.println(&quot;Monday&quot;);&#10;                break;&#10;            case 2:&#10;                System.out.println(&quot;Tuesday&quot;);&#10;                break;&#10;            case 3:&#10;                System.out.println(&quot;Wednesday&quot;);&#10;                break;&#10;        }&#10;    }&#10;}" />
+                  <Label layoutX="36.0" layoutY="1164.0" prefHeight="30.0" prefWidth="510.0" styleClass="h1_" stylesheets="@css/Level2App.css" text="Оператор default" />
+                  <AnchorPane layoutX="36.0" layoutY="1227.0" prefHeight="135.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level2App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="105.0" prefWidth="537.0" styleClass="h2_" stylesheets="@css/Level2App.css" text="Выражение switch может иметь опциональный оператор default.  Оператор default может использоваться для выполнения задания, когда нет соответствий ни с одним из условий" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="1380.0" prefHeight="323.0" prefWidth="465.0" styleClass="code" stylesheets="@css/Level2App.css" text="&#10;public class Program {&#10;    public static void main(String[] args) {&#10;        int day = 3;&#10;&#10;        switch(day) {&#10;            case 6:&#10;                System.out.println(&quot;Saturday&quot;);&#10;                break;&#10;            case 7:&#10;                System.out.println(&quot;Sunday&quot;);&#10;                break;&#10;            default:&#10;                System.out.println(&quot;Weekday&quot;);&#10;        }&#10;    }&#10;}" />
+                  <Label layoutX="36.0" layoutY="1737.0" prefHeight="30.0" prefWidth="510.0" styleClass="h1_" stylesheets="@css/Level2App.css" text="Switch-выражение" />
+                  <AnchorPane layoutX="36.0" layoutY="1802.0" prefHeight="135.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level2App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="105.0" prefWidth="537.0" styleClass="h2_" stylesheets="@css/Level2App.css" text="Switch-выражение допускает несколько значений, разделенных запятыми, для каждого случая и возвращает значение для всего блока switch-case." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="1953.0" prefHeight="292.0" prefWidth="465.0" styleClass="code" stylesheets="@css/Level2App.css" text="&#10;public class Program&#10;{&#10;    public static void main(String[] args) {&#10;&#10;        int day = 2;&#10;        String dayType  = switch(day) {&#10;            case 1, 2, 3, 4, 5 -&gt; &quot;Working day&quot;;&#10;            case 6, 7 -&gt; &quot;Weekend&quot;;&#10;            default -&gt; &quot;Invalid day&quot;;&#10;            };&#10;        System.out.println(dayType);&#10;    }&#10;}" />
+                  <AnchorPane layoutX="36.0" layoutY="2263.0" prefHeight="118.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level2App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="91.0" prefWidth="537.0" styleClass="h2_" stylesheets="@css/Level2App.css" text="switch-выражение делает блок switch-case намного короче и не использует оператор break." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <ScrollPane fx:id="sp6" layoutX="263.0" prefHeight="730.0" prefWidth="680.0" visible="false">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1126.0" prefWidth="662.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="36.0" layoutY="45.0" prefHeight="30.0" prefWidth="510.0" styleClass="h1_" stylesheets="@css/Level2App.css" text="Цикл while" />
+                  <TextArea editable="false" layoutX="36.0" layoutY="222.0" prefHeight="204.0" prefWidth="417.0" styleClass="code" stylesheets="@css/Level2App.css" text="&#10;public class Program {&#10;    public static void main(String[] args) {&#10;        int x = 3;&#10;        while(x &gt; 0) {&#10;            System.out.println(x);&#10;            x--;&#10;        }&#10;    }&#10;}" />
+                  <AnchorPane layoutX="36.0" layoutY="103.0" prefHeight="108.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level2App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="71.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level2App.css" text="Цикл (loop)  позволяет вам повторно выполнять выражение, или группу выражений.  Выражение цикла while повторно выполняется, пока заданное условие истинно." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="36.0" layoutY="438.0" prefHeight="97.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level2App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="69.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level2App.css" text="Цикл while проверяет условие x &gt; 0. Если оно истинно, то выполняются выражения в теле цикла. Затем выражение проверяется снова и повторяется цикл." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="36.0" layoutY="578.0" prefHeight="30.0" prefWidth="510.0" styleClass="h1_" stylesheets="@css/Level2App.css" text="Цикл while" />
+                  <AnchorPane layoutX="36.0" layoutY="656.0" prefHeight="118.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level2App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="93.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level2App.css" text="Если при проверке выражения результат оказывается ложным, то тело цикла пропускается и будет выполнено первое выражение после цикла while." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="794.0" prefHeight="273.0" prefWidth="424.0" styleClass="code" stylesheets="@css/Level2App.css" text="&#10;public class Program {&#10;    public static void main(String[] args) {&#10;        int x = 6;&#10;&#10;        while( x &lt; 10 )&#10;        {&#10;            System.out.println(x);&#10;            x++;&#10;        }&#10;        System.out.println(&quot;Loop ended&quot;);&#10;    }&#10;}" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <ScrollPane fx:id="sp7" layoutX="263.0" prefHeight="733.0" prefWidth="680.0" visible="false">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1130.0" prefWidth="662.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="36.0" layoutY="45.0" prefHeight="30.0" prefWidth="510.0" styleClass="h1_" stylesheets="@css/Level2App.css" text="Цикл for" />
+                  <TextArea editable="false" layoutX="36.0" layoutY="236.0" prefHeight="105.0" prefWidth="508.0" styleClass="code" stylesheets="@css/Level2App.css" text="&#10;for (initialization; condition; increment/decrement) { &#10;   statement(s) &#10;}" />
+                  <AnchorPane layoutX="36.0" layoutY="103.0" prefHeight="117.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level2App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="86.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level2App.css" text="Еще одной цикличной структурой является цикл for. Цикл for позволяет вам эффективно создавать циклы, которые должны быть запущены определенное количестов раз." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="36.0" layoutY="353.0" prefHeight="176.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level2App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="155.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level2App.css" text="Initialization(Инициализация): Выражение выполняется только один раз в начале цикла  Condition(Условие): Выполняется при каждой итерации цикла. Цикл выполняет выражение повторно, пока условие не будет ложным. Increment/Decrement(Инкремент/Декремент): Выполняется после каждой итерации цикла.  Следующий пример выводит числа от 1 до 5." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="538.0" prefHeight="168.0" prefWidth="430.0" styleClass="code" stylesheets="@css/Level2App.css" text="&#10;public class Program {&#10;    public static void main(String[] args) {&#10;        for(int x = 1; x &lt;=5; x++) {&#10;            System.out.println(x);&#10;        }&#10;    }&#10;}" />
+                  <AnchorPane layoutX="36.0" layoutY="715.0" prefHeight="185.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level2App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="159.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level2App.css" text="Переменная x инициализируется значением 1, и повторно выводит значение переменной x, пока условие x&lt;=5 не станет ложным. При каждой итерации выполняется выражение x++, инкрементирующее x на единицу.У вас может быть любой тип условия и любой тип инкремента в цикле for.  В примере ниже выводятся только четные числа, лежащие от 0 до 10:" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="907.0" prefHeight="170.0" prefWidth="430.0" styleClass="code" stylesheets="@css/Level2App.css" text="&#10;public class Program {&#10;    public static void main(String[] args) {&#10;        for(int x=0; x&lt;=10; x=x+2) {&#10;            System.out.println(x);&#10;        }&#10;    }&#10;}" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <ScrollPane fx:id="sp8" layoutX="263.0" prefHeight="748.0" prefWidth="680.0" visible="false">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1753.0" prefWidth="662.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="36.0" layoutY="45.0" prefHeight="30.0" prefWidth="510.0" styleClass="h1_" stylesheets="@css/Level2App.css" text="Цикл do...while" />
+                  <TextArea editable="false" layoutX="35.0" layoutY="223.0" prefHeight="201.0" prefWidth="414.0" styleClass="code" stylesheets="@css/Level2App.css" text="&#10;public class Program {&#10;    public static void main(String[] args) {&#10;        int x = 1;&#10;        do {&#10;            System.out.println(x);&#10;            x++;&#10;        } while(x &lt; 5);&#10;    }&#10;}" />
+                  <AnchorPane layoutX="36.0" layoutY="103.0" prefHeight="109.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level2App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="77.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level2App.css" text="Цикл do...while похож на цикл while, за исключением того, что цикл do...while гарантированно запустится по меньшей мере один раз." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="36.0" layoutY="437.0" prefHeight="136.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level2App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="113.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level2App.css" text="Обратите внимание, что условие появляется в конце цикла, так что выражения цикла выполняются один раз до проверки условия.  Даже если условие ложно, коды выполнится один раз." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="586.0" prefHeight="201.0" prefWidth="414.0" styleClass="code" stylesheets="@css/Level2App.css" text="&#10;public class Program {&#10;    public static void main(String[] args) {&#10;        int x = 1;&#10;        do {&#10;            System.out.println(x);&#10;            x++;&#10;        } while(x &lt; 0);&#10;    }&#10;}" />
+                  <Label layoutX="36.0" layoutY="831.0" prefHeight="30.0" prefWidth="510.0" styleClass="h1_" stylesheets="@css/Level2App.css" text="Операторы Управления Циклов" />
+                  <AnchorPane layoutX="36.0" layoutY="905.0" prefHeight="109.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level2App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="77.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level2App.css" text="Операторы break и continue изменяют ход выполнения цикла. Оператор break заканчивает цикл и переводит выполнение к выражению, следующему за циклом." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="1027.0" prefHeight="267.0" prefWidth="418.0" styleClass="code" stylesheets="@css/Level2App.css" text="&#10;public class Program {&#10;    public static void main(String[] args) {&#10;        int x = 1;&#10;        &#10;        while(x &gt; 0) {&#10;            System.out.println(x);&#10;            if(x == 4) {&#10;                break;&#10;            }&#10;            x++;&#10;        }&#10;    }&#10;}" />
+                  <AnchorPane layoutX="36.0" layoutY="1315.0" prefHeight="134.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level2App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="110.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level2App.css" text="Оператор continue заставляет цикл пропустить остаток его тела и затем немедленно протестировать его условие до переитерации. Другими словами, он заставляет цикл перейти к следующей итерации." wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea editable="false" layoutX="36.0" layoutY="1470.0" prefHeight="232.0" prefWidth="428.0" styleClass="code" stylesheets="@css/Level2App.css" text="&#10;public class Program {&#10;    public static void main(String[] args) {&#10;        for(int x=10; x&lt;=40; x=x+10) {&#10;            if(x == 30) {&#10;                continue;&#10;            }&#10;            System.out.println(x);&#10;        }&#10;    }&#10;}" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <ScrollPane fx:id="sp9" layoutX="263.0" prefHeight="730.0" prefWidth="680.0" visible="false">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1490.0" prefWidth="662.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="36.0" layoutY="45.0" prefHeight="30.0" prefWidth="510.0" styleClass="h1_" stylesheets="@css/Level2App.css" text="Тест" />
+                  <AnchorPane layoutX="36.0" layoutY="103.0" prefHeight="142.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level2App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="121.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level2App.css" text="Для получения следующего уровня, необходимо пройти тест, состоящий из разных вопросов и способов ответа на них. " wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="36.0" layoutY="260.0" prefHeight="36.0" prefWidth="499.0" style="-fx-background-color: #fed15a;" styleClass="subblock" stylesheets="@css/Level2App.css">
+                     <children>
+                        <Label layoutX="18.0" layoutY="5.0" prefHeight="40.0" prefWidth="463.0" styleClass="h3_" stylesheets="@css/Level2App.css" text="После прохождения этого теста вы получите 3й уровень" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="35.0" layoutY="320.0" prefHeight="242.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level2App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="61.0" prefWidth="551.0" styleClass="h2_" stylesheets="@css/Level2App.css" text="Заполните пустые места, чтобывывести сообщение &quot;in a loop&quot; 7 раз,используя цикл while:" wrapText="true" />
+                        <Label layoutX="26.0" layoutY="90.0" styleClass="code_text" stylesheets="@css/Level2App.css" text="int x = 1" />
+                        <TextField fx:id="tf1" alignment="TOP_LEFT" layoutX="102.0" layoutY="112.0" prefHeight="28.0" prefWidth="27.0" promptText="___" styleClass="code_text" />
+                        <Label layoutX="28.0" layoutY="116.0" prefHeight="18.0" prefWidth="83.0" styleClass="code_text" stylesheets="@css/Level2App.css" text="while(x&lt;=" />
+                        <Label layoutX="56.0" layoutY="139.0" prefHeight="18.0" prefWidth="280.0" styleClass="code_text" stylesheets="@css/Level2App.css" text="System.out.println(&quot;in a loop&quot;);" />
+                        <Label layoutX="134.0" layoutY="117.0" prefHeight="18.0" prefWidth="19.0" styleClass="code_text" stylesheets="@css/Level2App.css" text="){" />
+                        <TextField fx:id="tf2" alignment="TOP_LEFT" layoutX="50.0" layoutY="155.0" prefHeight="28.0" prefWidth="26.0" promptText="___" styleClass="code_text" />
+                        <Label layoutX="72.0" layoutY="161.0" styleClass="code_text" stylesheets="@css/Level2App.css" text="++;" />
+                        <Label layoutX="31.0" layoutY="185.0" styleClass="code_text" stylesheets="@css/Level2App.css" text="}" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="36.0" layoutY="574.0" prefHeight="303.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level2App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="73.0" prefWidth="539.0" styleClass="h2_" stylesheets="@css/Level2App.css" text="Пожалуйста, укажите правильныеутверждения об операторах &amp;&amp; и ||.Выберите все применимые ответы:" wrapText="true" />
+                        <RadioButton fx:id="rb1" layoutX="36.0" layoutY="84.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="410.0" styleClass="code_text" text="а || Б является истинным, если либо а,либо Б является истинным" wrapText="true" />
+                        <RadioButton fx:id="rb2" layoutX="36.0" layoutY="131.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="410.0" styleClass="code_text" text="а &amp;&amp; Б является истинным, если либо а, либо Б является истинным" wrapText="true" />
+                        <RadioButton fx:id="rb3" layoutX="36.0" layoutY="179.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="410.0" styleClass="code_text" text="(а||Б) &amp;&amp; С является истинным, если С истинно, и либо а, либо Б истинно" wrapText="true" />
+                        <RadioButton fx:id="rb4" layoutX="36.0" layoutY="232.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="410.0" styleClass="code_text" text="а &amp;&amp; Б является ложным, еслии а и Б являются истинными" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                  <Button layoutX="36.0" layoutY="1414.0" mnemonicParsing="false" onAction="#checkLevel2Test" styleClass="check_button" stylesheets="@css/Level2App.css" text="Проверить" />
+                  <AnchorPane layoutX="36.0" layoutY="889.0" prefHeight="242.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level2App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="61.0" prefWidth="551.0" styleClass="h2_" stylesheets="@css/Level2App.css" text="Заполните пустые места, чтобы вывести сообщение &quot;Уou rock!&quot;, если переменная &quot;а&quot; больше 15, а переменная &quot;b&quot; меньше, либо равна 72:" wrapText="true" />
+                        <Label layoutX="26.0" layoutY="90.0" prefHeight="18.0" prefWidth="115.0" styleClass="code_text" stylesheets="@css/Level2App.css" text="int a = 144;" />
+                        <Label layoutX="26.0" layoutY="112.0" prefHeight="18.0" prefWidth="280.0" styleClass="code_text" stylesheets="@css/Level2App.css" text="int b = 33;" />
+                        <Label layoutX="26.0" layoutY="133.0" prefHeight="18.0" prefWidth="87.0" styleClass="code_text" stylesheets="@css/Level2App.css" text="if (a &gt; 15" />
+                        <Label layoutX="31.0" layoutY="175.0" styleClass="code_text" stylesheets="@css/Level2App.css" text="}" />
+                        <TextField fx:id="tf3" alignment="TOP_LEFT" layoutX="110.0" layoutY="129.0" prefHeight="28.0" prefWidth="36.0" promptText="___" styleClass="code_text" />
+                        <Label layoutX="149.0" layoutY="134.0" prefHeight="18.0" prefWidth="49.0" styleClass="code_text" stylesheets="@css/Level2App.css" text="b &lt;= " />
+                        <TextField fx:id="tf4" alignment="TOP_LEFT" layoutX="184.0" layoutY="129.0" prefHeight="28.0" prefWidth="39.0" promptText="__" styleClass="code_text" />
+                        <Label layoutX="215.0" layoutY="134.0" prefHeight="18.0" prefWidth="49.0" styleClass="code_text" stylesheets="@css/Level2App.css" text="){" />
+                        <Label layoutX="63.0" layoutY="159.0" prefHeight="18.0" prefWidth="280.0" styleClass="code_text" stylesheets="@css/Level2App.css" text="System.out.println(&quot;You rock!&quot;);" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="36.0" layoutY="1143.0" prefHeight="242.0" prefWidth="590.0" styleClass="block" stylesheets="@css/Level2App.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" prefHeight="61.0" prefWidth="551.0" styleClass="h2_" stylesheets="@css/Level2App.css" text="Заполните пустые места, чтобы вывести сообщение &quot;in a loop&quot; 5 раз, используя цикл for:" wrapText="true" />
+                        <Label layoutX="27.0" layoutY="131.0" styleClass="code_text" stylesheets="@css/Level2App.css" text="}" />
+                        <TextField fx:id="tf5" alignment="TOP_LEFT" layoutX="22.0" layoutY="85.0" prefHeight="28.0" prefWidth="48.0" promptText="___" styleClass="code_text" />
+                        <Label layoutX="62.0" layoutY="90.0" prefHeight="18.0" prefWidth="77.0" styleClass="code_text" stylesheets="@css/Level2App.css" text="(int x=0;" />
+                        <Label layoutX="59.0" layoutY="115.0" prefHeight="18.0" prefWidth="280.0" styleClass="code_text" stylesheets="@css/Level2App.css" text="System.out.println(&quot;You rock!&quot;);" />
+                        <TextField fx:id="tf6" alignment="TOP_LEFT" layoutX="136.0" layoutY="85.0" prefHeight="28.0" prefWidth="27.0" promptText="___" styleClass="code_text" />
+                        <Label layoutX="164.0" layoutY="91.0" prefHeight="18.0" prefWidth="78.0" styleClass="code_text" stylesheets="@css/Level2App.css" text="&lt;5;x++){" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,83 @@
+.theme_button{
+    -fx-background-color: black;
+    -fx-cursor: hand;
+    -fx-font-family: "Arial Black";
+    -fx-font-size: 14;
+}
+
+.theme_button:hover{
+    -fx-background-color: #fed15a;
+    -fx-text-fill: black;
+}
+
+.h1_{
+    -fx-text-fill: black;
+    -fx-font-size: 24;
+    -fx-font-family: "Menlo";
+}
+
+.h2_{
+    -fx-text-fill: black;
+    -fx-font-size: 16;
+    -fx-font-family: "Menlo";
+}
+
+.h3_{
+    -fx-text-fill: black;
+    -fx-font-size: 14;
+    -fx-font-family: "Menlo";
+}
+
+.block{
+    -fx-background-color:  #dddddd;
+    -fx-background-radius: 5;
+}
+
+.subblock{
+    -fx-background-color:  #fed15a;
+}
+
+.text-area .content{
+    -fx-background-color: #2a2a2a;
+    -fx-background-radius: 5;
+}
+
+.code_text{
+    -fx-font-size: 16;
+    -fx-font-family: "Menlo";
+    -fx-text-fill: black;
+    -fx-padding: 10px;
+    -fx-max-width: 590px;
+    -fx-min-width: 590px;
+    -fx-pref-width: 590px;
+    -fx-background-radius: 5;;
+}
+
+.code_text:hover{
+    -fx-text-fill: #fed15a;
+    -fx-background-color: black;
+    -fx-cursor: hand;
+}
+
+.code{
+    -fx-font-size: 14;
+    -fx-font-family: "Menlo";
+    -fx-text-fill: #fed15a;
+    -fx-background-radius: 5;
+}
+
+.check_button {
+    -fx-font-size: 12pt;
+    -fx-font-family: "Arial Black";
+    -fx-background-color: #fed15a;
+    -fx-text-fill: black;
+    -fx-cursor: hand;
+}
+
+.check_button_2 {
+    -fx-font-size: 12pt;
+    -fx-font-family: "Arial Black";
+    -fx-background-color: #fed15a;
+    -fx-text-fill: black;
+    -fx-cursor: hand;
+}

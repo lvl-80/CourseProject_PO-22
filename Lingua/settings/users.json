@@ -1,0 +1,24 @@
+{
+  "users" : [ {
+    "login" : "Владимир Шахиджанян",
+    "mail" : "Shahidzhanyan22@gmail.com",
+    "password" : "Z2dhZWtpc3RoZWJlc3Q\n",
+    "level" : 2,
+    "mistakes" : 7,
+    "mark" : 8.0
+  }, {
+    "login" : "root",
+    "mail" : "rootmail@gmail.com",
+    "password" : "cm9vdHRvb3I\n",
+    "level" : 2,
+    "mistakes" : 0,
+    "mark" : 9.0
+  }, {
+    "login" : "dfdfddfddvwe",
+    "mail" : "dfddfdfd12231",
+    "password" : "ZmR3ZGZkZg\n",
+    "level" : 5,
+    "mistakes" : 1,
+    "mark" : 0.0
+  } ]
+}
